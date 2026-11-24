@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandsVisibility>
+		<Command name="Catalog._ДемоКлассификаторТНВЭД.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьНоменклатуру">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьКатегории">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Catalog._ДемоКлассификаторТНВЭД.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное02_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьНоменклатуру">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьКатегории">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.РаботаСНоменклатурой">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog._ДемоКлассификаторТНВЭД.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное02_Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog._ДемоКлассификаторТНВЭД.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьНоменклатуру">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьКатегории">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ПомощникОбновленияНоменклатуры">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.РазделГлавное02_Справочники</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

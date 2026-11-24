@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandsVisibility>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.РаботаСНоменклатурой">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.БанковскиеСчета.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ПомощникОбновленияНоменклатуры">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьКатегории">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьНоменклатуру">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ВыгрузитьНоменклатуру">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ПомощникОбновленияНоменклатуры">
+			<CommandGroup>CommandGroup.Сервис1СНоменклатура</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьКатегории">
+			<CommandGroup>CommandGroup.Сервис1СНоменклатура</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьНоменклатуру">
+			<CommandGroup>CommandGroup.Сервис1СНоменклатура</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ВыгрузитьНоменклатуру">
+			<CommandGroup>CommandGroup.Сервис1СНоменклатура</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Catalog.Организации.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВидыНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Номенклатура.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.НоменклатураКонтрагентов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВидыЦен.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.РаботаСНоменклатурой">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ФизическиеЛица.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.БанковскиеСчета.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog._ДемоКлассификаторТНВЭД.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog._ДемоКлассификаторОКПД2.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ПомощникОбновленияНоменклатуры">
+			<CommandGroup>CommandGroup.Сервис1СНоменклатура</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьКатегории">
+			<CommandGroup>CommandGroup.Сервис1СНоменклатура</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьНоменклатуру">
+			<CommandGroup>CommandGroup.Сервис1СНоменклатура</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ВыгрузитьНоменклатуру">
+			<CommandGroup>CommandGroup.Сервис1СНоменклатура</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.Сервис1СНоменклатура</Group>
+	</GroupsOrder>
+</CommandInterface>

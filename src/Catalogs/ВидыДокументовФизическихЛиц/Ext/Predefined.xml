@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="f25114c1-019f-4d8e-a99c-a0e3670f8bb8">
+		<Name>ВидНаЖительство</Name>
+		<Code/>
+		<Description>Вид на жительство</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="aefe0548-07c5-4c55-afd4-86452517f800">
+		<Name>ВодительскоеУдостоверение</Name>
+		<Code/>
+		<Description>Водительское удостоверение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d1ddf576-4164-49c0-8e0a-587a2fb54c5d">
+		<Name>ВоенныйБилет</Name>
+		<Code/>
+		<Description>Военный билет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b32813da-971c-4b34-8740-e796ae0ba0bf">
+		<Name>ВоенныйБилетОфицераЗапаса</Name>
+		<Code/>
+		<Description>Военный билет офицера запаса</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2810ac62-4048-4229-a90d-b7e65850e0fa">
+		<Name>ВременноеУдостоверениеВыданноеВзаменВоенногоБилета</Name>
+		<Code/>
+		<Description>Временное удостоверение выданное взамен военного билета</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ac5c3f12-ce22-49f1-ad25-331c060a5981">
+		<Name>ВременноеУдостоверениеЛичностиГражданинаРФ</Name>
+		<Code/>
+		<Description>Временное удостоверение личности гражданина РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="996c77d3-8715-4dda-9647-e5ab672f3ce2">
+		<Name>ДипломатическийПаспорт</Name>
+		<Code/>
+		<Description>Дипломатический паспорт гражданина РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="706e829d-4b1c-4b04-85f8-1dc193a32ea7">
+		<Name>ЗагранпаспортРФ</Name>
+		<Code/>
+		<Description>Загранпаспорт гражданина РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="005e3b80-b069-459b-b964-02716935fa16">
+		<Name>ЗагранпаспортСССР</Name>
+		<Code/>
+		<Description>Загранпаспорт гражданина СССР</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5e7f28fc-5e97-4a0f-ab34-895ad992f428">
+		<Name>ИностранныйПаспорт</Name>
+		<Code/>
+		<Description>Иностранный паспорт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="22c3981a-53b2-4a16-afbb-203f542c212c">
+		<Name>ИныеДокументыВыдаваемыеОрганамиМВД</Name>
+		<Code/>
+		<Description>Иные документы, выдаваемые органами МВД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4c123acf-1094-4de2-bcb6-017f1c6e7f9a">
+		<Name>ПаспортРФ</Name>
+		<Code/>
+		<Description>Паспорт гражданина РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="62c97c1b-7376-40e8-a718-a6b0d5ee0e49">
+		<Name>ПаспортСССР</Name>
+		<Code/>
+		<Description>Паспорт гражданина СССР</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="853bbf48-5dfa-4816-bdbe-0a1ab3885c5d">
+		<Name>ПаспортМинморфлота</Name>
+		<Code/>
+		<Description>Паспорт Минморфлота</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="48164c03-3056-452b-bb6c-ffea3623012b">
+		<Name>ПаспортМоряка</Name>
+		<Code/>
+		<Description>Паспорт моряка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ac60da05-c74a-481a-bf2e-310f85c93c14">
+		<Name>РазрешениеНаВременноеПроживаниеВРФ</Name>
+		<Code/>
+		<Description>Разрешение на временное проживание в РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a911f600-8c99-46f3-aefa-296bc5c2e796">
+		<Name>СвидетельствоОПредоставленииВременногоУбежищаНаТерриторииРФ</Name>
+		<Code/>
+		<Description>Свидетельство о предоставлении временного убежища на территории РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="df2cbf3a-7a48-432b-b68a-4ffe3f0b69ba">
+		<Name>СвидетельствоОРегистрацииХодатайстваИммигрантаОПризнанииЕгоБеженцем</Name>
+		<Code/>
+		<Description>Свидетельство о регистрации ходатайства иммигранта о признании его беженцем</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6ab67277-744c-4b8b-bff1-061456899451">
+		<Name>СвидетельствоОРождении</Name>
+		<Code/>
+		<Description>Свидетельство о рождении</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5d4fb676-0e93-4413-9cbc-30a742ad3d63">
+		<Name>СвидетельствоОРожденииВыданноеУполномоченнымОрганомИностранногоГосударства</Name>
+		<Code/>
+		<Description>Свидетельство о рождении, выданное уполномоченным органом иностранного государства</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="be04f697-5797-476d-aa3f-534187798898">
+		<Name>СправкаОбОсвобождении</Name>
+		<Code/>
+		<Description>Справка об освобождении</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="583f3d13-9f45-4ab6-9ba2-b9a45f532d28">
+		<Name>УдостоверениеБеженца</Name>
+		<Code/>
+		<Description>Удостоверение беженца</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="662d0ff8-ac06-444e-baee-5c221079ca5c">
+		<Name>УдостоверениеЛичностиВоеннослужащегоРФ</Name>
+		<Code/>
+		<Description>Удостоверение личности военнослужащего РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5e8797c0-09d1-4abc-b45e-8a9e179b121f">
+		<Name>УдостоверениеОфицера</Name>
+		<Code/>
+		<Description>Удостоверение личности офицера</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

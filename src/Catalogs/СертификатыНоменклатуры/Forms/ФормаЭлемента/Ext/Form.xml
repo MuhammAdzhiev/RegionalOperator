@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПроверитьСертификат" id="32">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьСертификат</CommandName>
+				<ExtendedTooltip name="ПроверитьСертификатРасширеннаяПодсказка" id="33"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ТипСертификата" id="29">
+			<DataPath>Объект.ТипСертификата</DataPath>
+			<MarkRequiredComplete>true</MarkRequiredComplete>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="ТипСертификатаКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ТипСертификатаРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="ГруппаДатаОкончанияДействия" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дата окончания действия</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДатаОкончанияДействияРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="ДатаРегистрации" id="7">
+					<DataPath>Объект.ДатаРегистрации</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действителен с </v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<MarkRequiredComplete>true</MarkRequiredComplete>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ДатаРегистрацииКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДатаРегистрацииРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ДатаОкончанияДействия" id="10">
+					<DataPath>Объект.ДатаОкончанияДействия</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ДатаОкончанияДействияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаОкончанияДействияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<CheckBoxField name="Бессрочный" id="16">
+					<DataPath>Объект.Бессрочный</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="БессрочныйКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="БессрочныйРасширеннаяПодсказка" id="18"/>
+					<Events>
+						<Event name="OnChange">БессрочныйПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Статус" id="13">
+			<DataPath>Объект.Статус</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="СтатусКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<LabelField name="Гиперссылка" id="19">
+			<DataPath>Объект.Гиперссылка</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ГиперссылкаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ГиперссылкаРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="Click">ГиперссылкаНажатие</Event>
+			</Events>
+		</LabelField>
+		<UsualGroup name="ГруппаНоменклатураСертификата" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура сертификата</v8:content>
+				</v8:item>
+			</Title>
+			<Group>HorizontalIfPossible</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="ГруппаНоменклатураСертификатаРасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<Table name="НоменклатураСертификата" id="53">
+					<Representation>List</Representation>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<Header>false</Header>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<DataPath>НоменклатураСертификата</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="НоменклатураСертификатаКонтекстноеМеню" id="55"/>
+					<AutoCommandBar name="НоменклатураСертификатаКоманднаяПанель" id="54"/>
+					<ExtendedTooltip name="НоменклатураСертификатаРасширеннаяПодсказка" id="56"/>
+					<SearchStringAddition name="НоменклатураСертификатаСтрокаПоиска" id="57">
+						<AdditionSource>
+							<Item>НоменклатураСертификата</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураСертификатаСтрокаПоискаКонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="НоменклатураСертификатаСтрокаПоискаРасширеннаяПодсказка" id="59"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="НоменклатураСертификатаСостояниеПросмотра" id="63">
+						<AdditionSource>
+							<Item>НоменклатураСертификата</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураСертификатаСостояниеПросмотраКонтекстноеМеню" id="64"/>
+						<ExtendedTooltip name="НоменклатураСертификатаСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="НоменклатураСертификатаУправлениеПоиском" id="60">
+						<AdditionSource>
+							<Item>НоменклатураСертификата</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураСертификатаУправлениеПоискомКонтекстноеМеню" id="61"/>
+						<ExtendedTooltip name="НоменклатураСертификатаУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">НоменклатураСертификатаПередНачаломДобавления</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="НоменклатураСертификатаНоменклатура" id="66">
+							<DataPath>НоменклатураСертификата.Номенклатура</DataPath>
+							<ContextMenu name="НоменклатураСертификатаНоменклатураКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="НоменклатураСертификатаНоменклатураРасширеннаяПодсказка" id="68"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СертификатыНоменклатуры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НоменклатураСертификата" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура сертификата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Номенклатура" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьСертификат" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить сертификат</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПроверитьСертификат</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.СертификатыНоменклатуры.StandardCommand.OpenByValue.Сертификат</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

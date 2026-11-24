@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<DataProcessor uuid="3684751f-3a73-419a-aea6-1b7bb6a354b0">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.НачалоРаботыКЭДО" category="Object">
+				<xr:TypeId>be0bc8c1-eaf6-4b70-bfb2-075ac3b40bf9</xr:TypeId>
+				<xr:ValueId>b58a4fb4-1b1e-42ca-8975-5429907428b1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.НачалоРаботыКЭДО" category="Manager">
+				<xr:TypeId>e1083550-d646-4b6c-adb7-f14719e7b7de</xr:TypeId>
+				<xr:ValueId>ab605d84-31d6-46fb-b4d7-7970529c634a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>НачалоРаботыКЭДО</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало работы Клиент ЭДО</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.НачалоРаботыКЭДО.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>ЛицензионноеСоглашение</Form>
+			<Template>ПанельДействий</Template>
+			<Template>ПанельНавигации</Template>
+			<Template>ПанельРазделов</Template>
+			<Template>УсловияЛицензионногоСоглашения</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

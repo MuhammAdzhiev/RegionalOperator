@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<SubsystemsVisibility>
+		<Subsystem name="Subsystem.Продажи">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Закупки">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem._ДемоОбменСКонтрагентами">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem._ДемоОбменССайтами">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.ВетИС">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Входящие">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.ЕГАИС">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Исходящие">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Маркировка">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.НеРаспределено">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Товары">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Черновики">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+	</SubsystemsVisibility>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Продажи</Subsystem>
+		<Subsystem>Subsystem.Закупки</Subsystem>
+		<Subsystem>Subsystem.Справочники</Subsystem>
+		<Subsystem>Subsystem.Контрагенты</Subsystem>
+		<Subsystem>cfad02ba-4ba0-47cf-9d3d-e2b6e0919abc</Subsystem>
+		<Subsystem>Subsystem.Рейсы</Subsystem>
+		<Subsystem>Subsystem.Инциденты</Subsystem>
+		<Subsystem>Subsystem.Биллинг</Subsystem>
+		<Subsystem>Subsystem.ОбменСБанками</Subsystem>
+		<Subsystem>Subsystem.Администрирование</Subsystem>
+		<Subsystem>Subsystem.АдминистрированиеСервиса</Subsystem>
+		<Subsystem>Subsystem.Настройки</Subsystem>
+		<Subsystem>99c3b0d6-fbac-4ce7-8c60-e4c87d6b8026</Subsystem>
+		<Subsystem>Subsystem._ДемоОбменСКонтрагентами</Subsystem>
+		<Subsystem>Subsystem._ДемоОбменССайтами</Subsystem>
+		<Subsystem>Subsystem.ВетИС</Subsystem>
+		<Subsystem>Subsystem.Входящие</Subsystem>
+		<Subsystem>Subsystem.ЕГАИС</Subsystem>
+		<Subsystem>Subsystem.Исходящие</Subsystem>
+		<Subsystem>Subsystem.Маркировка</Subsystem>
+		<Subsystem>Subsystem.НеРаспределено</Subsystem>
+		<Subsystem>Subsystem.Товары</Subsystem>
+		<Subsystem>Subsystem.Черновики</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

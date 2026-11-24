@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowCommandBar>false</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСопоставлениеНоменклатуры" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сопоставление номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сопоставление номенклатуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСопоставлениеНоменклатурыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьСопоставлениеНоменклатуры" id="3">
+					<DataPath>НаборКонстант.ИспользоватьСопоставлениеНоменклатуры</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сопоставлять номенклатуру при отражении документов</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сопоставление номенклатуры контрагента с номенклатурой информационной базы при отражении входящих электронных документов в системе.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<ContextMenu name="ИспользоватьСопоставлениеНоменклатурыКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ИспользоватьСопоставлениеНоменклатурыРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьСопоставлениеНоменклатурыПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="Обсуждения" id="6">
+			<DataPath>Обсуждения</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обсуждение, видеозвонки, оповещение о новых документов от бота, пуш-уведомления в мобильном приложении Клиент ЭДО</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<ContextMenu name="ОбсужденияКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="ОбсужденияРасширеннаяПодсказка" id="8"/>
+			<Events>
+				<Event name="OnChange">ОбсужденияПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<CheckBoxField name="СоздаватьЭлектронныеДокументыАвтоматическиБЭД" id="9">
+			<DataPath>НаборКонстант.СоздаватьЭлектронныеДокументыАвтоматически</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>После создания учетных документов в результате синхронизации данных с учетной системой.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<ContextMenu name="СоздаватьЭлектронныеДокументыАвтоматическиБЭДКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="СоздаватьЭлектронныеДокументыАвтоматическиБЭДРасширеннаяПодсказка" id="11"/>
+			<Events>
+				<Event name="OnChange">ИзменитьНастройкуАвтосозданияЭлектронныхДокументов</Event>
+			</Events>
+		</CheckBoxField>
+		<LabelDecoration name="НастройкаОповещенияОбОшибках" id="17">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить оповещения об ошибках</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка отправки электронных писем с описанием ошибок, из-за которых не удалось создать электронные документы.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="НастройкаОповещенияОбОшибкахКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="НастройкаОповещенияОбОшибкахРасширеннаяПодсказка" id="19"/>
+			<Events>
+				<Event name="Click">НастройкаОповещенияОбОшибкахНажатие</Event>
+			</Events>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ИспользоватьСопоставлениеНоменклатуры</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="Обсуждения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать сервис 1С:Диалог</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

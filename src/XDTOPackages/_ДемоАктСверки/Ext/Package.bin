@@ -1,0 +1,273 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="ON_ACCOUNTS" elementFormQualified="true" attributeFormQualified="false">
+	<property xmlns:d2p1="ON_ACCOUNTS" name="Файл" type="d2p1:Файл"/>
+	<objectType name="Файл">
+		<property name="ИдФайл" lowerBound="0" form="Attribute">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="1000"/>
+		</property>
+		<property name="ВерсФорм" lowerBound="1" form="Attribute">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="100"/>
+		</property>
+		<property name="ИдФорм" lowerBound="1" form="Attribute">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="40"/>
+		</property>
+		<property name="КодФормы" lowerBound="0" form="Attribute">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+		</property>
+		<property name="Документ">
+			<typeDef xsi:type="ObjectType">
+				<property name="Наим" lowerBound="0" form="Attribute">
+					<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="1000"/>
+				</property>
+				<property name="Сумма" lowerBound="0" form="Attribute">
+					<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+				</property>
+				<property name="Дата" lowerBound="0" form="Attribute">
+					<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="10">
+						<pattern>[0-9\-\.]{4,10}</pattern>
+					</typeDef>
+				</property>
+				<property name="Номер" lowerBound="0" form="Attribute">
+					<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+				</property>
+				<property name="Счет" lowerBound="0" form="Attribute">
+					<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100000"/>
+				</property>
+				<property name="Участник" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property name="Роль" lowerBound="0" form="Attribute">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="30"/>
+						</property>
+						<property name="Наим" lowerBound="0" form="Attribute">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="250"/>
+						</property>
+						<property name="Контакт" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="Телефон" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="10000"/>
+								</property>
+							</typeDef>
+						</property>
+						<property name="СвЮЛ" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="Наим" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="1000"/>
+								</property>
+								<property name="ИНН" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="10"/>
+								</property>
+								<property name="КПП" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="9"/>
+								</property>
+							</typeDef>
+						</property>
+						<property name="СвФЛ" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="Фамилия" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+								</property>
+								<property name="Имя" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+								</property>
+								<property name="Отчество" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+								</property>
+								<property name="ИНН" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="12"/>
+								</property>
+							</typeDef>
+						</property>
+						<property name="Адрес" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+								<property name="Тип" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="1000"/>
+								</property>
+								<property name="Наим" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+								</property>
+								<property name="АдрРФ" lowerBound="0">
+									<typeDef xsi:type="ObjectType">
+										<property name="Индекс" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="6"/>
+										</property>
+										<property name="КодРегион" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+										</property>
+										<property name="Район" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+										</property>
+										<property name="Город" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+										</property>
+										<property name="НаселПункт" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+										</property>
+										<property name="Улица" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+										</property>
+										<property name="Дом" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="20"/>
+										</property>
+										<property name="Корпус" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="20"/>
+										</property>
+										<property name="Кварт" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="20"/>
+										</property>
+									</typeDef>
+								</property>
+								<property name="АдрИно" lowerBound="0">
+									<typeDef xsi:type="ObjectType">
+										<property name="КодСтр" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="3"/>
+										</property>
+										<property name="АдрТекст" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="1000"/>
+										</property>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property name="Параметр" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property name="Имя" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+								</property>
+								<property name="Значение" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+								</property>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+				<property name="Основание" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property name="Наим" lowerBound="0" form="Attribute">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="1000"/>
+						</property>
+						<property name="Дата" lowerBound="0" form="Attribute">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="10000"/>
+						</property>
+						<property name="Номер" lowerBound="0" form="Attribute">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="1000"/>
+						</property>
+					</typeDef>
+				</property>
+				<property name="Период" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property name="Продолж" lowerBound="0" form="Attribute">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="1000"/>
+						</property>
+					</typeDef>
+				</property>
+				<property name="Таблица" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="Тип" lowerBound="0" form="Attribute">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+						</property>
+						<property name="СтрТабл" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property name="Тип" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="1000"/>
+								</property>
+								<property name="Наим" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+								</property>
+								<property name="Комментарий" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="10000"/>
+								</property>
+								<property name="Сумма" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="1000"/>
+								</property>
+								<property name="Дебет" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="1000"/>
+								</property>
+								<property name="Кредит" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="1000"/>
+								</property>
+								<property name="Примечание" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="1000"/>
+								</property>
+								<property name="Срок" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="10" maxLength="10">
+										<pattern>[0-9\-\.]{4,10}</pattern>
+									</typeDef>
+								</property>
+								<property name="Основание" lowerBound="0" upperBound="-1">
+									<typeDef xsi:type="ObjectType">
+										<property name="Номер" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+										</property>
+										<property name="Дата" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="10">
+												<pattern>[0-9\-\.]{4,10}</pattern>
+											</typeDef>
+										</property>
+										<property name="Период" lowerBound="0" upperBound="-1">
+											<typeDef xsi:type="ObjectType">
+												<property name="Наим" lowerBound="0" form="Attribute">
+													<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="100"/>
+												</property>
+												<property name="ДатаНач" lowerBound="0" form="Attribute">
+													<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="10">
+														<pattern>[0-9\-\.]{4,10}</pattern>
+													</typeDef>
+												</property>
+												<property name="ДатаКнц" lowerBound="0" form="Attribute">
+													<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="10">
+														<pattern>[0-9\-\.]{4,10}</pattern>
+													</typeDef>
+												</property>
+											</typeDef>
+										</property>
+										<property name="Участник" lowerBound="0" upperBound="-1">
+											<typeDef xsi:type="ObjectType">
+												<property name="Роль" lowerBound="0" form="Attribute">
+													<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="200"/>
+												</property>
+												<property name="Наим" lowerBound="0" form="Attribute">
+													<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="0" maxLength="200"/>
+												</property>
+											</typeDef>
+										</property>
+									</typeDef>
+								</property>
+								<property name="Параметр" lowerBound="0" upperBound="-1">
+									<typeDef xsi:type="ObjectType">
+										<property name="Имя" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+										</property>
+										<property name="Значение" lowerBound="0" form="Attribute">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+										</property>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property name="ИтогТабл" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property name="ОКЕИ" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+								</property>
+								<property name="Кол_во" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+								</property>
+								<property name="Сумма" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:decimal" variety="Atomic" totalDigits="17" fractionDigits="2"/>
+								</property>
+								<property name="Дата" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+								</property>
+								<property name="Дебет" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+								</property>
+								<property name="Кредит" lowerBound="0" form="Attribute">
+									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic"/>
+								</property>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+</package>

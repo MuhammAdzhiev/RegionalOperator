@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Subsystem uuid="86f9249b-f3ae-4363-86b2-3dde87b61123">
+		<Properties>
+			<Name>Биллинг</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Биллинг</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>StdPicture.Calendar</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусПотребителя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОбъектыНедвижимости</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипЖилья</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЛицевыеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТарифыТКО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипНачисления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеТКО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПлатежТКО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.КаналОплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусПлатежа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ВзаиморасчетыТКО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗадолженностьПоЛицевымСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОплатыЗаПериод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АктСверкиПоЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ТребованиеОбОплате</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусТребованияОбОплате</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.КвитанцияПоЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.НачисленияЗаПериод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АналитикаТКО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПерерасчетТКО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ОснованиеПерерасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПерерасчетыЗаПериод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.НеразнесенныеПлатежи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ИсторияОперацийПоЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МассовоеНачислениеТКО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.БазаНормативаТКО</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Subsystem uuid="7b3bcd94-ff48-43eb-9dfc-976eb3c479ab">
+		<Properties>
+			<Name>КлиентЭДО</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент ЭДО</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЮрФизЛицо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДоговорыКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.РазделГлавное02_Справочники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КоммерческиеПредложенияКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НачнитеОтсюда</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЗаблокироватьОткрытиеФормНаМобильномКлиентеКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СтруктураПодчиненности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСКонтрагентамиКЭДОКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетНаОплатуПокупателю</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхОшибкаВыгрузка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ВходящиеДокументы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбменУправлениеТорговлей103КлиентЭДОРегистрация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронноеВзаимодействиеКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаНевыбраннойКартинки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.БыстрыеНастройкиФонГруппы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЗаголовкиСтрокЦветТекста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбменУправлениеТорговлей103КлиентЭДОРегистрацияДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.БанковскиеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетФактураПолученный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.УстановитьПрефиксИнформационнойБазыИОрганизацииНомеруДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеДокументовКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСНоменклатуройКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентЭДОВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронноеВзаимодействиеКЭДОПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НоменклатураПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхВыполняетсяВыгрузка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Организации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентЭДОПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеТоваровУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбменУправлениеПредприятиемКлиентЭДОРегистрация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.РазделГлавное00_Создать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ИсходящиеДокументы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СинхронизацияДанныхЧерезУниверсальныйФорматРегистрацияУдаления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетФактураВыданный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхВыполняетсяПроверка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиКЭДОКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтавкиНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЕдиницыИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаОтчетаКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ПрефиксыОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТорговыеПредложенияКЭДОКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ХарактеристикиНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOptionsParameter.Организация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Лого1СДлинное</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.ОбменУправлениеПредприятиемКлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ОписаниеИзмененийСистемыКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Остатки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьНесколькоОрганизацийКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.ОбменУправлениеТорговлей103КлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ЛицензионноеСоглашениеПринято</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НачалоРаботыКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеНСИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДлительноеОжиданиеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкиБизнесСеть</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеНСИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеДокументовКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСНоменклатуройКЭДОКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбменУправлениеПредприятиемКлиентЭДОРегистрацияДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентЭДОКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БизнесСетьКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.УстановитьПрефиксИнформационнойБазыКодуСправочника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентЭДОКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИсправлениеДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхВОчередиЗагрузка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбменУправлениеТорговлей103КлиентЭДОРегистрацияУдаления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыКоммерческихПредложенийКлиентам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеУзловПлановОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбменУправлениеПредприятиемКлиентЭДОРегистрацияУдаления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.КорректировкаДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхУспехПроверка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеДоступомКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхУспехЗагрузка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СинхронизацияДанныхЧерезУниверсальныйФорматРегистрацияДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Продажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеУзловПлановОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.РазделГлавное01_Документы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.РазделГлавное03_Администрирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьХарактеристикиНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкиЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВалютаРегламентированногоУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьОбменБизнесСетьКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьНесколькоОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыборНоменклатурыИзСписка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.КомандаНайтиЗапросыКоммерческихПредложенийКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СинхронизацияДанныхЧерезУниверсальныйФорматРегистрацияНабора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСКонтрагентамиКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСКонтрагентамиКЭДОКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьХарактеристикиНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ЗаказыПоставщикамКлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхВыполняетсяЗагрузка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Штрихкоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КоммерческиеПредложенияДокументыКЭДОКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхВОчередиВыгрузка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхУспехВыгрузка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхОшибкаЗагрузка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыДоговоровКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхВОчередиПроверка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВидыЦен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПереносДанныхОшибкаПроверка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗагрузкаИзФайлаКоммерческиеПредложения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Закупки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПодборТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыЦен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СоздатьНаОснованииЗКП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПиктограммаТрендаРостУлучшается</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПиктограммаТрендаПадениеУхудшается</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПрайсЛист</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТоварыТорговыхПредложений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПоискТорговыхПредложений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделНоменклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТорговыеПредложенияКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.Сервис1СНоменклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОстаткиИЦены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПрайсЛист</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаВыбораПроцента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.Еще</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПокупателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РеквизитыСопоставленияНоменклатурыБизнесСеть</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АктОРасхожденияхПоПриемке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДанныхИзВнешнихФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТорговыеПредложения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаВыбораДополнительныхУсловий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МенеджерОбменаЧерезУниверсальныйФормат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СинхронизацияДанныхЧерезУниверсальныйФорматРегистрация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НоменклатураКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПодсистемаСправочники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПодсистемаПродажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПодсистемаЗакупки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиКЭДОКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыборКодовМаркировки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетНаОплатуПоставщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ОбстоятельстваИспользованияАктаОРасхождениях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиКЭДОВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ОбстоятельстваСоставленияАктаОРасхождениях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АктОРасхожденияхПоОтгрузке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ИсточникиСредствГосЗакупок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗаказов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПодключитьИОткрытьПомощникПубликации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КоммерческиеПредложенияДокументыКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КоммерческиеПредложенияДокументыКЭДОВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КоммерческиеПредложенияДокументыКЭДОКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьЗапросыКоммерческихПредложенийОтКлиентаКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьЗапросыКоммерческихПредложенийПоставщиковКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияКоммерческихПредложенийКлиентам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельАдминистрированияКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельАдминистрированияБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьСопоставлениеНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьСопоставлениеНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольСопоставленияНоменклатурыКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СтартовыйПомощникКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НастройкиСтартовогоПомощникаКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТорговыеПредложенияКЭДОВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Склады</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РегистрацияВСистемеВзаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.БазовыеПраваКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТоварныеГруппы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДокументыФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОснованияПолномочийОтветственныхЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОшибкиСозданияЭлектронныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтветственныеЗаОшибкиСозданияЭлектронныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МенеджерАвтоматическогоСозданияЭлектронныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СоздаватьЭлектронныеДокументыАвтоматически</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НастройкиОповещенияОбОшибках</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Организация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Ответственный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Адресат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НастройкиОповещенияОбОшибках</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыДеятельностиРаздельногоУчетаНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПолФизическогоЛица</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыДокументовФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФизическиеЛица</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Должности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СопоставлениеНоменклатурыКонтрагентовКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СопоставлениеНоменклатурыКонтрагентовКЭДОВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СопоставлениеНоменклатурыКонтрагентовКЭДОКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыОплатыПоГрафику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФормыОплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КонтактныеЛицаКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДлительнаяОперация85БЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументовКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПрисоединенныеФайлыКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыРасчетаКомиссионногоВознаграждения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВводРНПТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.КонтрагентБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МашиночитаемыеДоверенностиКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияShareКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПредметыДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДополнительныеСведенияАктаОРасхождениях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьПодключаемоеОборудование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьПодключаемоеОборудование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыИзмеряемыхВеличин</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеСвойствамиКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентЭДОКлиентПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьЛегкийКлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьЛегкийКлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиКлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтерфейсКлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтерфейсКлиентЭДОВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтерфейсКлиентЭДОКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СертификатыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СертификатыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыСертификатовНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КартинкаПодсистемыВходящие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КартинкаПодсистемыИсходящие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПередЗаписьюКонстантыКлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТарификацияКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТарификацияКЭДОКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТарификацияКЭДОКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТарификацияКЭДОВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтерфейсКлиентЭДОКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьСтандартныйКлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОписаниеИзмененийПриложенияКлиентЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗаменаСтавокНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСоСтавкамиНДСКЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗаменаСтавкиНДС</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>ГосИС</Subsystem>
+			<Subsystem>КлиентОбменаСГИСЭПД</Subsystem>
+			<Subsystem>КлиентЭлАктЕИС</Subsystem>
+			<Subsystem>ЛегкийКлиент</Subsystem>
+			<Subsystem>ПодключаемоеОборудование</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

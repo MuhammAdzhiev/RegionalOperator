@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandsVisibility>
+		<Command name="CommonCommand.ОткрытьРабочийСтолДиспетчера">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.ИсходящиеДокументы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.ВходящиеДокументы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.АрхивЭлектронныхДокументов">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ДокументыНаПодпись">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ПоискТорговыхПредложений">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ПубликацияТорговыхПредложений">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ЭлектронныеПеревозочныеДокументы.Command.ЭлектронныеПеревозочныеДокументы">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПанельАдминистрированияБЭД.Command.ПерсональныеНастройки">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.УчетныеЗаписиЭДОЛегкийКлиентЭДО">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ПользователиЛегкийКлиентЭДО">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ФизическиеЛицаЛегкийКлиентЭДО">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.НастройкиЭлектроннойПодписиИШифрованияЛегкийКлиентЭДО">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ЖурналМашиночитаемыхДоверенностейЛегкийКлиентЭДО">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.СчетНаОплатуПокупателю.Command.СоздатьСчетПокупателю">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.СчетНаОплатуПокупателю.Command.СоздатьСчетОферта">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаказПокупателя.Command.СоздатьЗаказПокупателя">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаказПоставщику.Command.СоздатьЗаказПоставщику">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьТоварнуюНакладную">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктНаПередачуПрав">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктВыполненныхРабот">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуру">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуруНаАванс">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьНоменклатуру">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьКатегории">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ПомощникОбновленияНоменклатуры">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor._ДемоШтампированиеФайлов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ДиагностикаЛегкийКлиентЭДО">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ТехническаяПоддержкаЛегкийКлиентЭДО">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ЕстьИдеяЛегкийКлиентЭДО">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ОписаниеИзмененийПриложенияКлиентЭДО">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.ОткрытьРабочийСтолДиспетчера">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DocumentJournal.ИсходящиеДокументы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DocumentJournal.ВходящиеДокументы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.АрхивЭлектронныхДокументов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ДокументыНаПодпись">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ПоискТорговыхПредложений">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ПубликацияТорговыхПредложений">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ЭлектронныеПеревозочныеДокументы.Command.ЭлектронныеПеревозочныеДокументы">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ПанельАдминистрированияБЭД.Command.ПерсональныеНастройки">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.УчетныеЗаписиЭДОЛегкийКлиентЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ПользователиЛегкийКлиентЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ФизическиеЛицаЛегкийКлиентЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.НастройкиЭлектроннойПодписиИШифрованияЛегкийКлиентЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ЖурналМашиночитаемыхДоверенностейЛегкийКлиентЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.СчетНаОплатуПокупателю.Command.СоздатьСчетПокупателю">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.СчетНаОплатуПокупателю.Command.СоздатьСчетОферта">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ЗаказПокупателя.Command.СоздатьЗаказПокупателя">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ЗаказПоставщику.Command.СоздатьЗаказПоставщику">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьТоварнуюНакладную">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктНаПередачуПрав">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктВыполненныхРабот">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуру">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуруНаАванс">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьНоменклатуру">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьКатегории">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ПомощникОбновленияНоменклатуры">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor._ДемоШтампированиеФайлов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Еще</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ДиагностикаЛегкийКлиентЭДО">
+			<CommandGroup>CommandGroup.Еще</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ТехническаяПоддержкаЛегкийКлиентЭДО">
+			<CommandGroup>CommandGroup.Еще</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ЕстьИдеяЛегкийКлиентЭДО">
+			<CommandGroup>CommandGroup.Еще</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ОписаниеИзмененийПриложенияКлиентЭДО">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.ОткрытьРабочийСтолДиспетчера">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.ИсходящиеДокументы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.ВходящиеДокументы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.АрхивЭлектронныхДокументов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ДокументыНаПодпись">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПоискТорговыхПредложений">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПубликацияТорговыхПредложений">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЭлектронныеПеревозочныеДокументы.Command.ЭлектронныеПеревозочныеДокументы">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПанельАдминистрированияБЭД.Command.ПерсональныеНастройки">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.УчетныеЗаписиЭДОЛегкийКлиентЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПользователиЛегкийКлиентЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ФизическиеЛицаЛегкийКлиентЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.НастройкиЭлектроннойПодписиИШифрованияЛегкийКлиентЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ЖурналМашиночитаемыхДоверенностейЛегкийКлиентЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.СчетНаОплатуПокупателю.Command.СоздатьСчетПокупателю">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.СчетНаОплатуПокупателю.Command.СоздатьСчетОферта">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаказПокупателя.Command.СоздатьЗаказПокупателя">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаказПоставщику.Command.СоздатьЗаказПоставщику">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьТоварнуюНакладную">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктНаПередачуПрав">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктВыполненныхРабот">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуру">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуруНаАванс">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьНоменклатуру">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ЗагрузитьКатегории">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РаботаСНоменклатурой.Command.ПомощникОбновленияНоменклатуры">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor._ДемоШтампированиеФайлов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Еще</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДиагностикаЛегкийКлиентЭДО">
+			<CommandGroup>CommandGroup.Еще</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ТехническаяПоддержкаЛегкийКлиентЭДО">
+			<CommandGroup>CommandGroup.Еще</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ЕстьИдеяЛегкийКлиентЭДО">
+			<CommandGroup>CommandGroup.Еще</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОписаниеИзмененийПриложенияКлиентЭДО">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.Еще</Group>
+		<Group>CommandGroup.Информация</Group>
+	</GroupsOrder>
+</CommandInterface>

@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРейсыСегодня" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рейсы сегодня</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа рейсы сегодня</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>WeakSeparation</Representation>
+					<ExtendedTooltip name="ГруппаРейсыСегодняРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="Город" id="64">
+							<DataPath>Город</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ГородКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="ГородРасширеннаяПодсказка" id="66"/>
+							<Events>
+								<Event name="OnChange">ГородПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Зона" id="67">
+							<DataPath>Зона</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЗонаКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ЗонаРасширеннаяПодсказка" id="69"/>
+							<Events>
+								<Event name="OnChange">ЗонаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Статус" id="70">
+							<DataPath>Статус</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="72"/>
+							<Events>
+								<Event name="OnChange">СтатусПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТипИсполнителя" id="73">
+							<DataPath>ТипИсполнителя</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТипИсполнителяКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="ТипИсполнителяРасширеннаяПодсказка" id="75"/>
+							<Events>
+								<Event name="OnChange">ТипИсполнителяПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Table name="РейсыСегодня" id="195">
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>РейсыСегодня</DataPath>
+							<RowPictureDataPath>РейсыСегодня.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="РейсыСегодняКонтекстноеМеню" id="196"/>
+							<AutoCommandBar name="РейсыСегодняКоманднаяПанель" id="197"/>
+							<ExtendedTooltip name="РейсыСегодняРасширеннаяПодсказка" id="198"/>
+							<SearchStringAddition name="РейсыСегодняСтрокаПоиска" id="199">
+								<AdditionSource>
+									<Item>РейсыСегодня</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РейсыСегодняСтрокаПоискаКонтекстноеМеню" id="200"/>
+								<ExtendedTooltip name="РейсыСегодняСтрокаПоискаРасширеннаяПодсказка" id="201"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РейсыСегодняСостояниеПросмотра" id="202">
+								<AdditionSource>
+									<Item>РейсыСегодня</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РейсыСегодняСостояниеПросмотраКонтекстноеМеню" id="203"/>
+								<ExtendedTooltip name="РейсыСегодняСостояниеПросмотраРасширеннаяПодсказка" id="204"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РейсыСегодняУправлениеПоиском" id="205">
+								<AdditionSource>
+									<Item>РейсыСегодня</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РейсыСегодняУправлениеПоискомКонтекстноеМеню" id="206"/>
+								<ExtendedTooltip name="РейсыСегодняУправлениеПоискомРасширеннаяПодсказка" id="207"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РейсыСегодняВодитель" id="208">
+									<DataPath>РейсыСегодня.Водитель</DataPath>
+									<ContextMenu name="РейсыСегодняВодительКонтекстноеМеню" id="209"/>
+									<ExtendedTooltip name="РейсыСегодняВодительРасширеннаяПодсказка" id="210"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняВремяНачала" id="211">
+									<DataPath>РейсыСегодня.ВремяНачала</DataPath>
+									<ContextMenu name="РейсыСегодняВремяНачалаКонтекстноеМеню" id="212"/>
+									<ExtendedTooltip name="РейсыСегодняВремяНачалаРасширеннаяПодсказка" id="213"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняВремяОкончания" id="214">
+									<DataPath>РейсыСегодня.ВремяОкончания</DataPath>
+									<ContextMenu name="РейсыСегодняВремяОкончанияКонтекстноеМеню" id="215"/>
+									<ExtendedTooltip name="РейсыСегодняВремяОкончанияРасширеннаяПодсказка" id="216"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняГород" id="217">
+									<DataPath>РейсыСегодня.Город</DataPath>
+									<ContextMenu name="РейсыСегодняГородКонтекстноеМеню" id="218"/>
+									<ExtendedTooltip name="РейсыСегодняГородРасширеннаяПодсказка" id="219"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняДата" id="220">
+									<DataPath>РейсыСегодня.Дата</DataPath>
+									<ContextMenu name="РейсыСегодняДатаКонтекстноеМеню" id="221"/>
+									<ExtendedTooltip name="РейсыСегодняДатаРасширеннаяПодсказка" id="222"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняЗона" id="223">
+									<DataPath>РейсыСегодня.Зона</DataPath>
+									<ContextMenu name="РейсыСегодняЗонаКонтекстноеМеню" id="224"/>
+									<ExtendedTooltip name="РейсыСегодняЗонаРасширеннаяПодсказка" id="225"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняНомер" id="229">
+									<DataPath>РейсыСегодня.Номер</DataPath>
+									<ContextMenu name="РейсыСегодняНомерКонтекстноеМеню" id="230"/>
+									<ExtendedTooltip name="РейсыСегодняНомерРасширеннаяПодсказка" id="231"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняОбъектПриема" id="232">
+									<DataPath>РейсыСегодня.ОбъектПриема</DataPath>
+									<ContextMenu name="РейсыСегодняОбъектПриемаКонтекстноеМеню" id="233"/>
+									<ExtendedTooltip name="РейсыСегодняОбъектПриемаРасширеннаяПодсказка" id="234"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняПодрядчик" id="235">
+									<DataPath>РейсыСегодня.Подрядчик</DataPath>
+									<ContextMenu name="РейсыСегодняПодрядчикКонтекстноеМеню" id="236"/>
+									<ExtendedTooltip name="РейсыСегодняПодрядчикРасширеннаяПодсказка" id="237"/>
+								</LabelField>
+								<CheckBoxField name="РейсыСегодняПометкаУдаления" id="238">
+									<DataPath>РейсыСегодня.ПометкаУдаления</DataPath>
+									<ContextMenu name="РейсыСегодняПометкаУдаленияКонтекстноеМеню" id="239"/>
+									<ExtendedTooltip name="РейсыСегодняПометкаУдаленияРасширеннаяПодсказка" id="240"/>
+								</CheckBoxField>
+								<LabelField name="РейсыСегодняПричинаСрыва" id="241">
+									<DataPath>РейсыСегодня.ПричинаСрыва</DataPath>
+									<ContextMenu name="РейсыСегодняПричинаСрываКонтекстноеМеню" id="242"/>
+									<ExtendedTooltip name="РейсыСегодняПричинаСрываРасширеннаяПодсказка" id="243"/>
+								</LabelField>
+								<CheckBoxField name="РейсыСегодняПроведен" id="244">
+									<DataPath>РейсыСегодня.Проведен</DataPath>
+									<ContextMenu name="РейсыСегодняПроведенКонтекстноеМеню" id="245"/>
+									<ExtendedTooltip name="РейсыСегодняПроведенРасширеннаяПодсказка" id="246"/>
+								</CheckBoxField>
+								<LabelField name="РейсыСегодняСмена" id="247">
+									<DataPath>РейсыСегодня.Смена</DataPath>
+									<ContextMenu name="РейсыСегодняСменаКонтекстноеМеню" id="248"/>
+									<ExtendedTooltip name="РейсыСегодняСменаРасширеннаяПодсказка" id="249"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняСсылка" id="250">
+									<DataPath>РейсыСегодня.Ссылка</DataPath>
+									<ContextMenu name="РейсыСегодняСсылкаКонтекстноеМеню" id="251"/>
+									<ExtendedTooltip name="РейсыСегодняСсылкаРасширеннаяПодсказка" id="252"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняСтатус" id="253">
+									<DataPath>РейсыСегодня.Статус</DataPath>
+									<ContextMenu name="РейсыСегодняСтатусКонтекстноеМеню" id="254"/>
+									<ExtendedTooltip name="РейсыСегодняСтатусРасширеннаяПодсказка" id="255"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняТочкиМаршрута" id="256">
+									<DataPath>РейсыСегодня.ТочкиМаршрута</DataPath>
+									<ContextMenu name="РейсыСегодняТочкиМаршрутаКонтекстноеМеню" id="257"/>
+									<ExtendedTooltip name="РейсыСегодняТочкиМаршрутаРасширеннаяПодсказка" id="258"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняТС" id="259">
+									<DataPath>РейсыСегодня.ТС</DataPath>
+									<ContextMenu name="РейсыСегодняТСКонтекстноеМеню" id="260"/>
+									<ExtendedTooltip name="РейсыСегодняТСРасширеннаяПодсказка" id="261"/>
+								</LabelField>
+								<LabelField name="РейсыСегодняСтандартнаяКартинка" id="262">
+									<DataPath>РейсыСегодня.DefaultPicture</DataPath>
+									<ContextMenu name="РейсыСегодняСтандартнаяКартинкаКонтекстноеМеню" id="263"/>
+									<ExtendedTooltip name="РейсыСегодняСтандартнаяКартинкаРасширеннаяПодсказка" id="264"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИнцидентыСегодня" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инциденты сегодня</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа инциденты сегодня</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>WeakSeparation</Representation>
+					<ExtendedTooltip name="ГруппаИнцидентыСегодняРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<Table name="ИнцидентыСегодня" id="146">
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ИнцидентыСегодня</DataPath>
+							<RowPictureDataPath>ИнцидентыСегодня.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ИнцидентыСегодняКонтекстноеМеню" id="147"/>
+							<AutoCommandBar name="ИнцидентыСегодняКоманднаяПанель" id="148"/>
+							<ExtendedTooltip name="ИнцидентыСегодняРасширеннаяПодсказка" id="149"/>
+							<SearchStringAddition name="ИнцидентыСегодняСтрокаПоиска" id="150">
+								<AdditionSource>
+									<Item>ИнцидентыСегодня</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИнцидентыСегодняСтрокаПоискаКонтекстноеМеню" id="151"/>
+								<ExtendedTooltip name="ИнцидентыСегодняСтрокаПоискаРасширеннаяПодсказка" id="152"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИнцидентыСегодняСостояниеПросмотра" id="153">
+								<AdditionSource>
+									<Item>ИнцидентыСегодня</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИнцидентыСегодняСостояниеПросмотраКонтекстноеМеню" id="154"/>
+								<ExtendedTooltip name="ИнцидентыСегодняСостояниеПросмотраРасширеннаяПодсказка" id="155"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИнцидентыСегодняУправлениеПоиском" id="156">
+								<AdditionSource>
+									<Item>ИнцидентыСегодня</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИнцидентыСегодняУправлениеПоискомКонтекстноеМеню" id="157"/>
+								<ExtendedTooltip name="ИнцидентыСегодняУправлениеПоискомРасширеннаяПодсказка" id="158"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИнцидентыСегодняДата" id="159">
+									<DataPath>ИнцидентыСегодня.Дата</DataPath>
+									<ContextMenu name="ИнцидентыСегодняДатаКонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="ИнцидентыСегодняДатаРасширеннаяПодсказка" id="161"/>
+								</LabelField>
+								<LabelField name="ИнцидентыСегодняНомер" id="162">
+									<DataPath>ИнцидентыСегодня.Номер</DataPath>
+									<ContextMenu name="ИнцидентыСегодняНомерКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ИнцидентыСегодняНомерРасширеннаяПодсказка" id="164"/>
+								</LabelField>
+								<LabelField name="ИнцидентыСегодняПлощадка" id="168">
+									<DataPath>ИнцидентыСегодня.Площадка</DataPath>
+									<ContextMenu name="ИнцидентыСегодняПлощадкаКонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="ИнцидентыСегодняПлощадкаРасширеннаяПодсказка" id="170"/>
+								</LabelField>
+								<LabelField name="ИнцидентыСегодняТипИнцидента" id="174">
+									<DataPath>ИнцидентыСегодня.ТипИнцидента</DataPath>
+									<ContextMenu name="ИнцидентыСегодняТипИнцидентаКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ИнцидентыСегодняТипИнцидентаРасширеннаяПодсказка" id="176"/>
+								</LabelField>
+								<LabelField name="ИнцидентыСегодняОписание" id="177">
+									<DataPath>ИнцидентыСегодня.Описание</DataPath>
+									<ContextMenu name="ИнцидентыСегодняОписаниеКонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="ИнцидентыСегодняОписаниеРасширеннаяПодсказка" id="179"/>
+								</LabelField>
+								<LabelField name="ИнцидентыСегодняСтатус" id="180">
+									<DataPath>ИнцидентыСегодня.Статус</DataPath>
+									<ContextMenu name="ИнцидентыСегодняСтатусКонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="ИнцидентыСегодняСтатусРасширеннаяПодсказка" id="182"/>
+								</LabelField>
+								<LabelField name="ИнцидентыСегодняОтветственный" id="183">
+									<DataPath>ИнцидентыСегодня.Ответственный</DataPath>
+									<ContextMenu name="ИнцидентыСегодняОтветственныйКонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="ИнцидентыСегодняОтветственныйРасширеннаяПодсказка" id="185"/>
+								</LabelField>
+								<LabelField name="ИнцидентыСегодняФото" id="189">
+									<DataPath>~ИнцидентыСегодня.Фото</DataPath>
+									<ContextMenu name="ИнцидентыСегодняФотоКонтекстноеМеню" id="190"/>
+									<ExtendedTooltip name="ИнцидентыСегодняФотоРасширеннаяПодсказка" id="191"/>
+								</LabelField>
+								<LabelField name="ИнцидентыСегодняРейс" id="192">
+									<DataPath>ИнцидентыСегодня.Рейс</DataPath>
+									<ContextMenu name="ИнцидентыСегодняРейсКонтекстноеМеню" id="193"/>
+									<ExtendedTooltip name="ИнцидентыСегодняРейсРасширеннаяПодсказка" id="194"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="БыстрыеДействия" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Быстрые действия</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Быстрые действия</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>WeakSeparation</Representation>
+					<ExtendedTooltip name="БыстрыеДействияРасширеннаяПодсказка" id="8"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Город" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Город</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Города</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Зона" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЗоныОбслуживания</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Статус" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтатусРейса</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипИсполнителя" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип исполнителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипИсполнителя</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РейсыСегодня" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рейсы сегодня</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументРейс.Ссылка КАК Ссылка,
+	ДокументРейс.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументРейс.Номер КАК Номер,
+	ДокументРейс.Дата КАК Дата,
+	ДокументРейс.Проведен КАК Проведен,
+	ДокументРейс.Смена КАК Смена,
+	ДокументРейс.ТипИсполнителя КАК ТипИсполнителя,
+	ДокументРейс.ТС КАК ТС,
+	ДокументРейс.Водитель КАК Водитель,
+	ДокументРейс.Подрядчик КАК Подрядчик,
+	ДокументРейс.Город КАК Город,
+	ДокументРейс.Зона КАК Зона,
+	ДокументРейс.Статус КАК Статус,
+	ДокументРейс.ПричинаСрыва КАК ПричинаСрыва,
+	ДокументРейс.ВремяНачала КАК ВремяНачала,
+	ДокументРейс.ВремяОкончания КАК ВремяОкончания,
+	ДокументРейс.ОбъектПриема КАК ОбъектПриема,
+	ДокументРейс.ТочкиМаршрута.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Площадка КАК Площадка,
+		ПланОбъемМ3 КАК ПланОбъемМ3,
+		ФактОбъемМ3 КАК ФактОбъемМ3,
+		СтатусТочки КАК СтатусТочки,
+		ПричинаНевыполнения КАК ПричинаНевыполнения,
+		Комментарий КАК Комментарий,
+		ФотоДо КАК ФотоДо,
+		ФотоПосле КАК ФотоПосле
+	) КАК ТочкиМаршрута,
+	ДокументРейс.МоментВремени КАК МоментВремени
+ИЗ
+	Документ.Рейс КАК ДокументРейс
+ГДЕ
+	(ДокументРейс.Город = &amp;Город
+			ИЛИ &amp;Город = ЗНАЧЕНИЕ(Справочник.Города.ПустаяСсылка))
+	И (ДокументРейс.Зона = &amp;Зона
+			ИЛИ &amp;Зона = ЗНАЧЕНИЕ(Справочник.ЗоныОбслуживания.ПустаяСсылка))
+	И (ДокументРейс.Статус = &amp;Статус
+			ИЛИ &amp;Статус = ЗНАЧЕНИЕ(Перечисление.СтатусРейса.ПустаяСсылка))
+	И (ДокументРейс.ТипИсполнителя = &amp;ТипИсполнителя
+			ИЛИ &amp;ТипИсполнителя = ЗНАЧЕНИЕ(Перечисление.ТипИсполнителя.ПустаяСсылка))
+	И ДокументРейс.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>ТочкиМаршрута</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипИсполнителя</dcssch:dataPath>
+					<dcssch:field>ТипИсполнителя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТС</dcssch:dataPath>
+					<dcssch:field>ТС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Смена</dcssch:dataPath>
+					<dcssch:field>Смена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Водитель</dcssch:dataPath>
+					<dcssch:field>Водитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПричинаСрыва</dcssch:dataPath>
+					<dcssch:field>ПричинаСрыва</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подрядчик</dcssch:dataPath>
+					<dcssch:field>Подрядчик</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Город</dcssch:dataPath>
+					<dcssch:field>Город</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТочкиМаршрута.Ссылка</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Зона</dcssch:dataPath>
+					<dcssch:field>Зона</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Статус</dcssch:dataPath>
+					<dcssch:field>Статус</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВремяНачала</dcssch:dataPath>
+					<dcssch:field>ВремяНачала</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВремяОкончания</dcssch:dataPath>
+					<dcssch:field>ВремяОкончания</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъектПриема</dcssch:dataPath>
+					<dcssch:field>ОбъектПриема</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
+					<dcssch:field>МоментВремени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТочкиМаршрута.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТочкиМаршрута.Площадка</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута.Площадка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТочкиМаршрута.ПланОбъемМ3</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута.ПланОбъемМ3</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТочкиМаршрута.ФактОбъемМ3</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута.ФактОбъемМ3</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТочкиМаршрута.СтатусТочки</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута.СтатусТочки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТочкиМаршрута.ПричинаНевыполнения</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута.ПричинаНевыполнения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТочкиМаршрута.Комментарий</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута.Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТочкиМаршрута.ФотоПосле</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута.ФотоПосле</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТочкиМаршрута.ФотоДо</dcssch:dataPath>
+					<dcssch:field>ТочкиМаршрута.ФотоДо</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>Город</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Город</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Города</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Зона</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зона</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ЗоныОбслуживания</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Статус</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:EnumRef.СтатусРейса</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ТекущаяДата</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая дата</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ТипИсполнителя</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип исполнителя</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:EnumRef.ТипИсполнителя</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Document.Рейс</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:dataParameters/>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИнцидентыСегодня" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инциденты сегодня</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументИнцидент.Ссылка КАК Ссылка,
+	ДокументИнцидент.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументИнцидент.Номер КАК Номер,
+	ДокументИнцидент.Дата КАК Дата,
+	ДокументИнцидент.Проведен КАК Проведен,
+	ДокументИнцидент.Площадка КАК Площадка,
+	ДокументИнцидент.ТипИнцидента КАК ТипИнцидента,
+	ДокументИнцидент.Описание КАК Описание,
+	ДокументИнцидент.Статус КАК Статус,
+	ДокументИнцидент.Ответственный КАК Ответственный,
+	ДокументИнцидент.ФотоДо КАК ФотоДо,
+	ДокументИнцидент.Рейс КАК Рейс,
+	ДокументИнцидент.МоментВремени КАК МоментВремени
+ИЗ
+	Документ.Инцидент КАК ДокументИнцидент
+ГДЕ
+	(ДокументИнцидент.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)
+				И ДокументИнцидент.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусИнцидента.Создан)
+			ИЛИ ДокументИнцидент.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусИнцидента.Назначен)
+			ИЛИ ДокументИнцидент.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусИнцидента.ВРаботе))</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипИнцидента</dcssch:dataPath>
+					<dcssch:field>ТипИнцидента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Широта</dcssch:dataPath>
+					<dcssch:field>Широта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Долгота</dcssch:dataPath>
+					<dcssch:field>Долгота</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Рейс</dcssch:dataPath>
+					<dcssch:field>Рейс</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Площадка</dcssch:dataPath>
+					<dcssch:field>Площадка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Описание</dcssch:dataPath>
+					<dcssch:field>Описание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Статус</dcssch:dataPath>
+					<dcssch:field>Статус</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ответственный</dcssch:dataPath>
+					<dcssch:field>Ответственный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Фото</dcssch:dataPath>
+					<dcssch:field>Фото</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
+					<dcssch:field>МоментВремени</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ТекущаяДата</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая дата</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Document.Инцидент</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Потребитель" id="4">
+			<DataPath>Объект.Потребитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПотребительКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПотребительРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ОбъектНедвижимости" id="7">
+			<DataPath>Объект.ОбъектНедвижимости</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОбъектНедвижимостиКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОбъектНедвижимостиРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Статус" id="10">
+			<DataPath>Объект.Статус</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СтатусКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ДатаОткрытия" id="13">
+			<DataPath>Объект.ДатаОткрытия</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаОткрытияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДатаОткрытияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ДатаЗакрытия" id="16">
+			<DataPath>Объект.ДатаЗакрытия</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаЗакрытияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДатаЗакрытияРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="НомерЛСДляПоиска" id="25">
+			<DataPath>Объект.НомерЛСДляПоиска</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерЛСДляПоискаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="НомерЛСДляПоискаРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="РасчетныйОбъемМ3" id="36">
+			<DataPath>Объект.РасчетныйОбъемМ3</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="РасчетныйОбъемМ3КонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="РасчетныйОбъемМ3РасширеннаяПодсказка" id="38"/>
+		</InputField>
+		<InputField name="КоличествоБаков" id="40">
+			<DataPath>Объект.КоличествоБаков</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КоличествоБаковКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="КоличествоБаковРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="ОбъемБакаМ3" id="44">
+			<DataPath>Объект.ОбъемБакаМ3</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОбъемБакаМ3КонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="ОбъемБакаМ3РасширеннаяПодсказка" id="46"/>
+		</InputField>
+		<InputField name="КоличествоВывозовЗаМесяц" id="48">
+			<DataPath>Объект.КоличествоВывозовЗаМесяц</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КоличествоВывозовЗаМесяцКонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="КоличествоВывозовЗаМесяцРасширеннаяПодсказка" id="50"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ЛицевыеСчета</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

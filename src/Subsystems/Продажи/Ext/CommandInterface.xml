@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandsVisibility>
+		<Command name="Document.КоммерческоеПредложениеКлиенту.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗапросКоммерческогоПредложенияОтКлиента.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаказПокупателя.Command.СоздатьЗаказПокупателя">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьТоварнуюНакладную">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктВыполненныхРабот">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктНаПередачуПрав">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуру">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуруНаАванс">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.ЗаказПокупателя.Command.СоздатьЗаказПокупателя">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьТоварнуюНакладную">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктВыполненныхРабот">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктНаПередачуПрав">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуру">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуруНаАванс">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.ПубликацияТорговыхПредложений">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.НайтиЗапросыКоммерческихПредложений">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ТорговыеПредложения.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаказПокупателя.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.СчетНаОплатуПокупателю.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПоОтгрузке.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.КоммерческоеПредложениеКлиенту.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ЗапросКоммерческогоПредложенияОтКлиента.Command.ЗапросыКоммерческихПредложенийОтКлиентов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.КоммерческоеПредложениеКлиенту.Command.КоммерческиеПредложенияКлиентам">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ЗапросКоммерческогоПредложенияОтКлиента.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаказПокупателя.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.СчетНаОплатуПокупателю.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.СчетНаОплатуПокупателю.Command.СоздатьСчетПокупателю">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.СчетНаОплатуПокупателю.Command.СоздатьСчетОферта">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаказПокупателя.Command.СоздатьЗаказПокупателя">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьТоварнуюНакладную">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктВыполненныхРабот">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.Command.СоздатьАктНаПередачуПрав">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуру">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СоздатьСчетФактуруНаАванс">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ТорговыеПредложения.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПоОтгрузке.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.КоммерческоеПредложениеКлиенту.Command.КоммерческоеПредложениеКлиенту">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.КоммерческоеПредложениеКлиенту.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ЗапросКоммерческогоПредложенияОтКлиента.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.АктСверкиВзаиморасчетов.Command.СоздатьАктСверкиВзаиморасчетов">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.АктСверкиВзаиморасчетов.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>ActionsPanelCreate</Group>
+	</GroupsOrder>
+</CommandInterface>

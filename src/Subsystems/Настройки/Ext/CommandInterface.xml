@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandsVisibility>
+		<Command name="DataProcessor.ПанельАдминистрированияБПО.Command.ПоддержкаОборудования">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="DataProcessor.ПанельАдминистрированияБПО.Command.ПоддержкаОборудованияВажное">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.Command.УдалениеПомеченныхОбъектов">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ФизическиеЛица.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное02_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное02_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.НастройкиСинхронизацииДанныхЭРГО">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПоддержкаОборудования">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ТехническаяПоддержкаЭДО">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.Command.УдалениеПомеченныхОбъектов">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное02_Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.ФизическиеЛица.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное02_Справочники</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Настройки.Subsystem.ЭДО</Subsystem>
+		<Subsystem>Subsystem.Настройки.Subsystem.ЕГАИС</Subsystem>
+		<Subsystem>Subsystem.Настройки.Subsystem.Маркировка</Subsystem>
+		<Subsystem>Subsystem.Настройки.Subsystem.ВетИС</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.РазделГлавное02_Справочники</Group>
+	</GroupsOrder>
+</CommandInterface>

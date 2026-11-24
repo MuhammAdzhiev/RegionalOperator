@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<CommandSet>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКомандаЗаписатьИЗакрыть" id="170">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.КомандаЗаписатьИЗакрыть</CommandName>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаКомандаЗаписатьИЗакрытьРасширеннаяПодсказка" id="171"/>
+			</Button>
+			<Button name="ФормаКомандаЗаписать" id="172">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаЗаписать</CommandName>
+				<ExtendedTooltip name="ФормаКомандаЗаписатьРасширеннаяПодсказка" id="173"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="121">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="122"/>
+			<ChildItems>
+				<UsualGroup name="ШапкаЛево" id="123">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаЛевоРасширеннаяПодсказка" id="124"/>
+					<ChildItems>
+						<InputField name="ФИО" id="25">
+							<DataPath>Объект.ФИО</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Полное имя</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<Width>53</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ФИОКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="27"/>
+							<Events>
+								<Event name="OnChange">ФИОПриИзменении</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаФИО" id="103">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ФИО</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФИОРасширеннаяПодсказка" id="104"/>
+							<ChildItems>
+								<LabelField name="Фамилия" id="28">
+									<DataPath>Объект.Фамилия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>14</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="ФамилияКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ФамилияРасширеннаяПодсказка" id="30"/>
+								</LabelField>
+								<LabelField name="Имя" id="31">
+									<DataPath>Объект.Имя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>14</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="ИмяКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="33"/>
+								</LabelField>
+								<LabelField name="Отчество" id="34">
+									<DataPath>Объект.Отчество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>14</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="ОтчествоКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ОтчествоРасширеннаяПодсказка" id="36"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ШапкаПраво" id="125">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаПравоРасширеннаяПодсказка" id="126"/>
+					<ChildItems>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<Button name="ИзменитьЧастиФИО" id="105">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ИзменитьЧастиФИО</CommandName>
+							<ExtendedTooltip name="ИзменитьЧастиФИОРасширеннаяПодсказка" id="106"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="107">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="108"/>
+			<ChildItems>
+				<Page name="ГруппаГлавное" id="109">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Главное</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаГлавноеРасширеннаяПодсказка" id="110"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОсновныеЛичныеДанные" id="111">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа основные личные данные</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОсновныеЛичныеДанныеРасширеннаяПодсказка" id="112"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДатаРожденияПол" id="113">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дата рождения, пол</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДатаРожденияПолРасширеннаяПодсказка" id="114"/>
+									<ChildItems>
+										<InputField name="ДатаРождения" id="10">
+											<DataPath>Объект.ДатаРождения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="12"/>
+										</InputField>
+										<InputField name="Пол" id="19">
+											<DataPath>Объект.Пол</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<Width>9</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ПолКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="21"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИННСНИЛС" id="115">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ИНН, СНИЛС</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИННСНИЛСРасширеннаяПодсказка" id="116"/>
+									<ChildItems>
+										<InputField name="ИНН" id="13">
+											<DataPath>Объект.ИНН</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<Width>12</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ИННКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="15"/>
+										</InputField>
+										<InputField name="СтраховойНомерПФР" id="22">
+											<DataPath>Объект.СтраховойНомерПФР</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<Width>12</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="СтраховойНомерПФРКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="СтраховойНомерПФРРасширеннаяПодсказка" id="24"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Гражданство" id="37">
+							<DataPath>Объект.Гражданство</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ГражданствоКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ГражданствоРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="МестоРождения" id="16">
+							<DataPath>Объект.МестоРождения</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<Height>3</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="МестоРожденияКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="МестоРожденияРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<UsualGroup name="ГруппаУдостоверениеЛичности" id="177">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа удостоверение личности</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУдостоверениеЛичностиРасширеннаяПодсказка" id="178"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьДокументУдостоверяющийЛичность" id="179">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документ,
+удостоверяющий
+личность</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьДокументУдостоверяющийЛичностьКонтекстноеМеню" id="180"/>
+									<ExtendedTooltip name="НадписьДокументУдостоверяющийЛичностьРасширеннаяПодсказка" id="181"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДокументУдостоверяющийЛичность" id="182">
+									<Width>50</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>3</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документ удостоверяющий личность</v8:content>
+										</v8:item>
+									</Title>
+									<GroupVerticalAlign>Top</GroupVerticalAlign>
+									<Hyperlink>true</Hyperlink>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДокументУдостоверяющийЛичностьКонтекстноеМеню" id="183"/>
+									<ExtendedTooltip name="ДокументУдостоверяющийЛичностьРасширеннаяПодсказка" id="184"/>
+									<Events>
+										<Event name="Click">ДокументУдостоверяющийЛичностьНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ВсеДокументыЭтогоЧеловека" id="166">
+							<Type>Hyperlink</Type>
+							<Height>1</Height>
+							<CommandName>Form.Command.ВсеДокументыЭтогоЧеловека</CommandName>
+							<ExtendedTooltip name="ВсеДокументыЭтогоЧеловекаРасширеннаяПодсказка" id="167"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаКонтактнаяИнформация" id="168">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адреса, телефоны</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаКонтактнаяИнформацияРасширеннаяПодсказка" id="169"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ФизическиеЛица</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДокументыФизическихЛиц" id="2">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ДокументыФизическихЛиц</v8:Type>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНСИ">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНСИ">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДокументыФизическихЛицНоваяЗапись" id="3">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументыФизическихЛицПрежняя" id="4">
+			<Type/>
+		</Attribute>
+		<Attribute name="ФизическоеЛицоСсылка" id="5">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИзменитьЧастиФИО" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить ФИО</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить части ФИО</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьЧастиФИО</Action>
+		</Command>
+		<Command name="ВсеДокументыЭтогоЧеловека" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все документы этого человека</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВсеДокументыЭтогоЧеловека</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаЗаписать" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<Shortcut>Ctrl+S</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗаписать</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаЗаписатьИЗакрыть" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗаписатьИЗакрыть</Action>
+			<Representation>Text</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

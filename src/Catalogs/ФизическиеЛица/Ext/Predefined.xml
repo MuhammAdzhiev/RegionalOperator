@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="28297342-3bcf-4fd5-b62b-1e968d739ed3">
+		<Name>Водители</Name>
+		<Code>0000000001</Code>
+		<Description>Водители</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="4ec1d09e-24d1-464c-ab9b-577d0b1a2a2b">
+		<Name>Сотрудники</Name>
+		<Code>0000000002</Code>
+		<Description>Сотрудники</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+</PredefinedData>

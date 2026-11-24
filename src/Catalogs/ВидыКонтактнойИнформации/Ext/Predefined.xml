@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="84026904-0ddf-47ba-a171-2d92f8c37c8e">
+		<Name>СправочникКонтактныеЛицаКонтрагентов</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Контактные лица контрагентов"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="af919f1e-31f1-4599-9d68-e947f3e62ca6">
+				<Name>EmailКонтактногоЛицаКонтрагента</Name>
+				<Code/>
+				<Description>Email</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="fc2b9ff5-5a63-4144-a4c9-3e49ea77348a">
+				<Name>ТелефонКонтактногоЛицаКонтрагента</Name>
+				<Code/>
+				<Description>Телефон</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="e016d563-76cb-4ae7-a57c-4dda0f6a742e">
+		<Name>СправочникКонтейнерныеПлощадки</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Контейнерные площадки"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="ac4da01f-2601-407f-87aa-99eea8693569">
+				<Name>АдресКонтейнернойПлощадки</Name>
+				<Code/>
+				<Description>Адрес контейнерной площадки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="57715ba9-e096-4a2b-bbe8-97e714645629">
+		<Name>СправочникКонтрагенты</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Контрагенты"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="ac4b85e7-092f-47be-a25c-18dbc766b088">
+				<Name>ПочтовыйАдресКонтрагента</Name>
+				<Code/>
+				<Description>Почтовый адрес</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e9f3e9e9-f538-4b1b-bfff-7c051afaf98f">
+				<Name>ТелефонКонтрагента</Name>
+				<Code/>
+				<Description>Телефон</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="77e58b4d-e9f7-4b05-a37c-1afe103e7984">
+				<Name>ФаксКонтрагента</Name>
+				<Code/>
+				<Description>Факс</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1827ce54-5d4e-457c-ba9a-9d549adb4366">
+				<Name>ФактАдресКонтрагента</Name>
+				<Code/>
+				<Description>Фактический адрес</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="eec60fe9-e590-4cef-abcd-e02ed3a1c608">
+				<Name>EmailКонтрагента</Name>
+				<Code/>
+				<Description>Электронная почта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="aebbe2ed-2cd6-4042-9576-651e02a51191">
+				<Name>ЮрАдресКонтрагента</Name>
+				<Code/>
+				<Description>Юридический адрес</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="69a3e68c-b5a4-410b-b741-5b42725a4195">
+		<Name>СправочникОбъектыНедвижимости</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Объекты недвижимости"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="e83b715e-092d-4032-9f98-444994479ecb">
+				<Name>АдресОбъектаНедвижимости</Name>
+				<Code/>
+				<Description>Адрес объекта недвижимости</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="5e3dff51-0102-4880-82b1-09f55978e195">
+		<Name>СправочникОбъектыПриемаТКО</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Объекты приема ТКО"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="3480c573-a38f-48ab-859d-1ccc66b4fbcd">
+				<Name>АдресОбъектаПриемаТКО</Name>
+				<Code/>
+				<Description>Адрес объекта приема ТКО</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="eff15c74-fdf0-4971-8991-27c46706a3b5">
+		<Name>СправочникОрганизации</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Организации"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="ef537d41-19e4-41fd-aba5-f908cad69b61">
+				<Name>ВебСайтОрганизации</Name>
+				<Code/>
+				<Description>Веб сайт</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3c8ab6a2-c592-4473-922f-35623f0d702c">
+				<Name>ПочтовыйАдресОрганизации</Name>
+				<Code/>
+				<Description>Почтовый адрес</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b8d798b7-96d0-44db-9054-5b156eded8c5">
+				<Name>ТелефонОрганизации</Name>
+				<Code/>
+				<Description>Телефон</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a9c5e14d-75ef-4b4f-80c7-efb816d3bdbe">
+				<Name>ФаксОрганизации</Name>
+				<Code/>
+				<Description>Факс</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="38e74218-2bef-4de1-bc17-3aa0c885b6af">
+				<Name>ФактАдресОрганизации</Name>
+				<Code/>
+				<Description>Фактический адрес</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ff9c2543-c8bc-4555-addb-3f87ed61850b">
+				<Name>EmailОрганизации</Name>
+				<Code/>
+				<Description>Электронная почта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4302cbf8-b879-47dd-a572-55dede6758ed">
+				<Name>ЮрАдресОрганизации</Name>
+				<Code/>
+				<Description>Юридический адрес</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8cbaa30d-faab-45ad-880e-84f8b421f448">
+		<Name>СправочникПользователи</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Пользователи"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="35dccbf2-dcce-4160-91a0-9697dd21aa79">
+				<Name>ТелефонПользователя</Name>
+				<Code/>
+				<Description>Телефон</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b930f2d1-4c2b-4f78-a697-4b87e83c8dd0">
+				<Name>EmailПользователя</Name>
+				<Code/>
+				<Description>Электронная почта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="2335ca16-2047-4cc2-b346-02316095e002">
+		<Name>СправочникСклады</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Склады"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="50344b6e-840c-4e2a-8c89-274dbffa5bab">
+				<Name>АдресСклада</Name>
+				<Code/>
+				<Description>Адрес склада</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="68c54763-9ff9-4d8e-9285-4770b9c662a0">
+		<Name>СправочникФизическиеЛица</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Физические лица"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="aca50800-bc3c-4c3a-b089-3ec3788a9d1b">
+				<Name>EMailФизлица</Name>
+				<Code/>
+				<Description>Email</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="37ea70de-8af2-44ba-bc50-54e49e069693">
+				<Name>АдресЗаПределамиРФФизлица</Name>
+				<Code/>
+				<Description>Адрес за пределами РФ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1fe0af5c-46a5-485b-8943-385eba51e14c">
+				<Name>АдресМестаПроживанияФизлица</Name>
+				<Code/>
+				<Description>Адрес места проживания</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8897279f-26bb-42d5-a47c-050176b71327">
+				<Name>АдресПоПропискеФизлица</Name>
+				<Code/>
+				<Description>Адрес по прописке</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5a948b28-89cc-4621-b4ed-86680dfbc9e3">
+				<Name>АдресПочтовыйФизлица</Name>
+				<Code/>
+				<Description>Почтовый адрес</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e778d765-ea8e-43f4-8f72-4d77cb5db993">
+				<Name>ТелефонДомашнийФизлица</Name>
+				<Code/>
+				<Description>Телефон домашний</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d06c2aaf-3359-491d-87c7-e28acc23932f">
+				<Name>ТелефонРабочийФизлица</Name>
+				<Code/>
+				<Description>Телефон рабочий</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

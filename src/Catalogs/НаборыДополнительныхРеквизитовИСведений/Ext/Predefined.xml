@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="eeaea31c-d100-438b-8315-bd801571fb84">
+		<Name>УдалитьСправочник_ВнешниеПользователи</Name>
+		<Code/>
+		<Description>Внешние пользователи</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="be950181-561c-47a1-8ed2-d240d175ce5f">
+		<Name>УдалитьДокумент_Встреча</Name>
+		<Code/>
+		<Description>Встреча</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f00b4fb9-334e-4a18-b5bc-0e56b18e66a2">
+		<Name>УдалитьДокумент_ЗапланированноеВзаимодействие</Name>
+		<Code/>
+		<Description>Запланированное взаимодействие</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4b1f6bdf-16e9-480e-8012-6474f53e56ac">
+		<Name>УдалитьСправочник_ПапкиФайлов</Name>
+		<Code/>
+		<Description>Папка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="09343521-4f35-4e03-97e0-96ee8bf911c6">
+		<Name>УдалитьСправочник_Пользователи</Name>
+		<Code/>
+		<Description>Пользователи</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e528d7dc-346b-4deb-92ec-b6cefa78c66f">
+		<Name>УдалитьДокумент_СообщениеSMS</Name>
+		<Code/>
+		<Description>Сообщение SMS</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="95fb09ad-333d-4be6-aa1f-ab5195d20a38">
+		<Name>УдалитьДокумент_ТелефонныйЗвонок</Name>
+		<Code/>
+		<Description>Телефонный звонок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="00e33f58-9a02-471c-968b-22cb087ac0f8">
+		<Name>УдалитьСправочник_Файлы</Name>
+		<Code/>
+		<Description>Файл</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="db5de384-751b-41d1-be73-ca7a03ba3869">
+		<Name>УдалитьДокумент_ЭлектронноеПисьмоВходящее</Name>
+		<Code/>
+		<Description>Электронное письмо входящее</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ea29cfd1-ab78-4d2f-aa5c-338ea6f9172e">
+		<Name>УдалитьДокумент_ЭлектронноеПисьмоИсходящее</Name>
+		<Code/>
+		<Description>Электронное письмо исходящее</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="52b833ef-1497-42c6-9d06-bde2998d7edb">
+		<Name>УдалитьСправочник_Номенклатура</Name>
+		<Code/>
+		<Description>Номенклатура</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="f8130235-71d1-411b-9032-0b66c6568a49">
+				<Name>УдалитьСправочник_Номенклатура_Общие</Name>
+				<Code/>
+				<Description>Общие</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8b1e2431-4198-459c-a619-8ba94426d51e">
+		<Name>УдалитьСправочник_ХарактеристикиНоменклатуры</Name>
+		<Code/>
+		<Description>Справочник "Характеристики номенклатуры"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="04688976-d6d8-405f-86f3-558d4d5a87dc">
+				<Name>УдалитьСправочник_ХарактеристикиНоменклатуры_Общие</Name>
+				<Code/>
+				<Description>Справочник "Характеристики номенклатуры" (Общие)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="f6042d85-b493-4238-8702-965c7b79d086">
+		<Name>УдалитьДокумент_АктОРасхожденияхПоПриемке</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ac4e7dbc-c01f-4830-b5ec-a609709ee05d">
+		<Name>УдалитьДокумент_ЗаказПокупателя</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="eab3dcf0-57c3-43c7-b40a-bc4394d71849">
+		<Name>УдалитьДокумент_АктОРасхожденияхПоОтгрузке</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="51d4751a-0089-4bf3-b30b-e93ee5869ba7">
+		<Name>УдалитьДокумент_ЗаказПоставщику</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7de3a426-f36d-4457-a80b-8b2d12b36a97">
+		<Name>УдалитьДокумент_ПоступлениеТоваровУслуг</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="40823db9-97c5-414c-9930-b19732fd205d">
+		<Name>УдалитьДокумент_РеализацияТоваровУслуг</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a4338afe-9a13-4fd6-91f2-f2dcf10d6aed">
+		<Name>УдалитьДокумент_СчетНаОплатуПокупателю</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6462268b-3ffe-4cf0-aacf-a9bf020ab108">
+		<Name>УдалитьДокумент_СчетНаОплатуПоставщика</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="24de8494-ab87-4fb7-9d4d-487215f755a3">
+		<Name>УдалитьДокумент_СчетФактураВыданный</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="35a728bd-332a-48c0-95c4-c960edef0a97">
+		<Name>УдалитьДокумент_СчетФактураПолученный</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fcf23b1b-5873-43e0-96c2-3d3a94366337">
+		<Name>УдалитьДокумент_ЗапросКоммерческихПредложенийПоставщиков</Name>
+		<Code/>
+		<Description>Запрос коммерческих предложений поставщиков</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b9bf116b-22d4-47b9-95a9-4e4d22b3f2c3">
+		<Name>УдалитьДокумент_ЗапросКоммерческогоПредложенияОтКлиента</Name>
+		<Code/>
+		<Description>Запрос коммерческого предложения от клиента</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="995823fd-c393-46c1-9b95-e3422aa3b2bf">
+		<Name>УдалитьДокумент_КоммерческоеПредложениеКлиенту</Name>
+		<Code/>
+		<Description>Коммерческое предложение клиенту</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="66be9ab8-b305-4e53-9fa8-02d6e1d27a73">
+		<Name>УдалитьДокумент_КоммерческоеПредложениеПоставщика</Name>
+		<Code/>
+		<Description>Коммерческое предложение поставщика</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c618b95e-1dad-4ec7-acb2-e91c6398bcb4">
+		<Name>УдалитьДокумент__ДемоОтчетКомитенту</Name>
+		<Code/>
+		<Description>Отчет комитенту</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="30238eb3-0bcb-4d6c-8487-265fd83e60e8">
+		<Name>УдалитьДокумент__ДемоОтчетКомиссионера</Name>
+		<Code/>
+		<Description>Документ отчет комиссионера</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="123e33a1-b546-4be8-a324-c959947e7829">
+		<Name>УдалитьДокумент__ДемоПередачаТоваровМеждуОрганизациями</Name>
+		<Code/>
+		<Description>Удалить документ демо передача товаров между организациями</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

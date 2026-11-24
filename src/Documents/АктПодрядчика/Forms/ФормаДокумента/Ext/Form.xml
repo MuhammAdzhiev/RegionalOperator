@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Подрядчик" id="7">
+			<DataPath>Объект.Подрядчик</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПодрядчикКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПодрядчикРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="59">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<InputField name="ПериодС" id="10">
+					<DataPath>Объект.ПериодС</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПериодСКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ПериодСРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="ПериодПо" id="13">
+					<DataPath>Объект.ПериодПо</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПериодПоКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ПериодПоРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Ответсвенный" id="16">
+			<DataPath>Объект.Ответственный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОтветсвенныйКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ОтветсвенныйРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Комментарий" id="19">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<Table name="Строки" id="152">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Строки</DataPath>
+			<ShowCommandBar>auto</ShowCommandBar>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СтрокиКонтекстноеМеню" id="153"/>
+			<AutoCommandBar name="СтрокиКоманднаяПанель" id="154">
+				<ChildItems>
+					<Button name="СтрокиЗаполнитьПоНашимРейсам" id="219">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьПоНашимРейсам</CommandName>
+						<ExtendedTooltip name="СтрокиЗаполнитьПоНашимРейсамРасширеннаяПодсказка" id="220"/>
+					</Button>
+					<Button name="СтрокиЗагрузитьИзExcel" id="217">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьИзExcel</CommandName>
+						<ExtendedTooltip name="СтрокиЗагрузитьИзExcelРасширеннаяПодсказка" id="218"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СтрокиРасширеннаяПодсказка" id="155"/>
+			<SearchStringAddition name="СтрокиСтрокаПоиска" id="156">
+				<AdditionSource>
+					<Item>Строки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтрокиСтрокаПоискаКонтекстноеМеню" id="157"/>
+				<ExtendedTooltip name="СтрокиСтрокаПоискаРасширеннаяПодсказка" id="158"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СтрокиСостояниеПросмотра" id="159">
+				<AdditionSource>
+					<Item>Строки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтрокиСостояниеПросмотраКонтекстноеМеню" id="160"/>
+				<ExtendedTooltip name="СтрокиСостояниеПросмотраРасширеннаяПодсказка" id="161"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СтрокиУправлениеПоиском" id="162">
+				<AdditionSource>
+					<Item>Строки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СтрокиУправлениеПоискомКонтекстноеМеню" id="163"/>
+				<ExtendedTooltip name="СтрокиУправлениеПоискомРасширеннаяПодсказка" id="164"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СтрокиНомерСтроки" id="173">
+					<DataPath>Объект.Строки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="СтрокиНомерСтрокиКонтекстноеМеню" id="174"/>
+					<ExtendedTooltip name="СтрокиНомерСтрокиРасширеннаяПодсказка" id="175"/>
+				</LabelField>
+				<InputField name="СтрокиРейс" id="177">
+					<DataPath>Объект.Строки.Рейс</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтрокиРейсКонтекстноеМеню" id="178"/>
+					<ExtendedTooltip name="СтрокиРейсРасширеннаяПодсказка" id="179"/>
+				</InputField>
+				<InputField name="СтрокиТС" id="181">
+					<DataPath>Объект.Строки.ТС</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтрокиТСКонтекстноеМеню" id="182"/>
+					<ExtendedTooltip name="СтрокиТСРасширеннаяПодсказка" id="183"/>
+				</InputField>
+				<InputField name="СтрокиОбъектПриема" id="185">
+					<DataPath>Объект.Строки.ОбъектПриема</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтрокиОбъектПриемаКонтекстноеМеню" id="186"/>
+					<ExtendedTooltip name="СтрокиОбъектПриемаРасширеннаяПодсказка" id="187"/>
+				</InputField>
+				<InputField name="СтрокиОбъемПоНашимДаннымМ3" id="193">
+					<DataPath>Объект.Строки.ОбъемПоНашимДаннымМ3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтрокиОбъемПоНашимДаннымМ3КонтекстноеМеню" id="194"/>
+					<ExtendedTooltip name="СтрокиОбъемПоНашимДаннымМ3РасширеннаяПодсказка" id="195"/>
+				</InputField>
+				<InputField name="СтрокиОбъемПоДаннымПодрядчикаМ3" id="197">
+					<DataPath>Объект.Строки.ОбъемПоДаннымПодрядчикаМ3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтрокиОбъемПоДаннымПодрядчикаМ3КонтекстноеМеню" id="198"/>
+					<ExtendedTooltip name="СтрокиОбъемПоДаннымПодрядчикаМ3РасширеннаяПодсказка" id="199"/>
+				</InputField>
+				<InputField name="СтрокиРасхождениеМ3" id="201">
+					<DataPath>Объект.Строки.РасхождениеМ3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтрокиРасхождениеМ3КонтекстноеМеню" id="202"/>
+					<ExtendedTooltip name="СтрокиРасхождениеМ3РасширеннаяПодсказка" id="203"/>
+				</InputField>
+				<CheckBoxField name="СтрокиНашиДанныеПолучены" id="205">
+					<DataPath>Объект.Строки.НашиДанныеПолучены</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="СтрокиНашиДанныеПолученыКонтекстноеМеню" id="206"/>
+					<ExtendedTooltip name="СтрокиНашиДанныеПолученыРасширеннаяПодсказка" id="207"/>
+				</CheckBoxField>
+				<CheckBoxField name="СтрокиДанныеПодрядчикаПолучены" id="209">
+					<DataPath>Объект.Строки.ДанныеПодрядчикаПолучены</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="СтрокиДанныеПодрядчикаПолученыКонтекстноеМеню" id="210"/>
+					<ExtendedTooltip name="СтрокиДанныеПодрядчикаПолученыРасширеннаяПодсказка" id="211"/>
+				</CheckBoxField>
+				<InputField name="СтрокиСтатусСверки" id="189">
+					<DataPath>Объект.Строки.СтатусСверки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтрокиСтатусСверкиКонтекстноеМеню" id="190"/>
+					<ExtendedTooltip name="СтрокиСтатусСверкиРасширеннаяПодсказка" id="191"/>
+				</InputField>
+				<InputField name="СтрокиПримечание" id="213">
+					<DataPath>Объект.Строки.Примечание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтрокиПримечаниеКонтекстноеМеню" id="214"/>
+					<ExtendedTooltip name="СтрокиПримечаниеРасширеннаяПодсказка" id="215"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.АктПодрядчика</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПоНашимРейсам" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по нашим рейсам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по нашим рейсам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоНашимРейсам</Action>
+		</Command>
+		<Command name="ЗагрузитьИзExcel" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из excel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзExcel</Action>
+		</Command>
+	</Commands>
+</Form>

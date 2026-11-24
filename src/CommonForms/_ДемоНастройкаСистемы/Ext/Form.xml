@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбменССайтом" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки интеграции</v8:content>
+				</v8:item>
+			</Title>
+			<Group>HorizontalIfPossible</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="ОбменССайтомРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<Button name="ОбработкаПанельАдминистрированияОбменаССайтомОбменССайтом" id="80">
+					<Type>Hyperlink</Type>
+					<CommandName>DataProcessor.ПанельАдминистрированияОбменаССайтом.Command.ОбменССайтом</CommandName>
+					<ExtendedTooltip name="ОбработкаПанельАдминистрированияОбменаССайтомОбменССайтомРасширеннаяПодсказка" id="81"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ОтображениеПодсистем" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение подсистем</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение подсистем</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="ОтображениеПодсистемРасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<CheckBoxField name="_ДемоИспользоватьПодсистемуОбменСКонтрагентами" id="57">
+					<DataPath>НаборКонстант._ДемоПоказыватьПодсистемуОбменСКонтрагентами</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="_ДемоИспользоватьПодсистемуОбменСКонтрагентамиКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="_ДемоИспользоватьПодсистемуОбменСКонтрагентамиРасширеннаяПодсказка" id="59"/>
+				</CheckBoxField>
+				<CheckBoxField name="_ДемоИспользоватьПодсистемуОбменСБанками" id="60">
+					<DataPath>НаборКонстант.ПоказыватьПодсистемуОбменСБанками</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="_ДемоИспользоватьПодсистемуОбменСБанкамиКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="_ДемоИспользоватьПодсистемуОбменСБанкамиРасширеннаяПодсказка" id="62"/>
+				</CheckBoxField>
+				<CheckBoxField name="_ДемоИспользоватьПодсистемуОбменССайтами" id="63">
+					<DataPath>НаборКонстант._ДемоПоказыватьПодсистемуОбменССайтами</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="_ДемоИспользоватьПодсистемуОбменССайтамиКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="_ДемоИспользоватьПодсистемуОбменССайтамиРасширеннаяПодсказка" id="65"/>
+				</CheckBoxField>
+				<CheckBoxField name="_ДемоИспользоватьПодсистемуБизнесСеть" id="66">
+					<DataPath>НаборКонстант._ДемоПоказыватьПодсистему1CБизнесСеть</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="_ДемоИспользоватьПодсистемуБизнесСетьКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="_ДемоИспользоватьПодсистемуБизнесСетьРасширеннаяПодсказка" id="68"/>
+				</CheckBoxField>
+				<CheckBoxField name="_ДемоПоказыватьПодсистемуРаботаСНоменклатурой" id="87">
+					<DataPath>НаборКонстант._ДемоПоказыватьПодсистемуРаботаСНоменклатурой</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="_ДемоПоказыватьПодсистемуРаботаСНоменклатуройКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="_ДемоПоказыватьПодсистемуРаботаСНоменклатуройРасширеннаяПодсказка" id="89"/>
+				</CheckBoxField>
+				<UsualGroup name="КоммерческиеПредложения" id="96">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коммерческие предложения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коммерческие предложения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="КоммерческиеПредложенияРасширеннаяПодсказка" id="97"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьЗапросыКоммерческихПредложенийОтКлиента" id="90">
+							<DataPath>НаборКонстант.ИспользоватьЗапросыКоммерческихПредложенийОтКлиента</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="ИспользоватьЗапросыКоммерческихПредложенийОтКлиентаКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ИспользоватьЗапросыКоммерческихПредложенийОтКлиентаРасширеннаяПодсказка" id="92"/>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьЗапросыКоммерческихПредложенийПоставщиков" id="93">
+							<DataPath>НаборКонстант.ИспользоватьЗапросыКоммерческихПредложенийПоставщиков</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="ИспользоватьЗапросыКоммерческихПредложенийПоставщиковКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="ИспользоватьЗапросыКоммерческихПредложенийПоставщиковРасширеннаяПодсказка" id="95"/>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьКоммерческиеПредложенияКлиентам" id="98">
+							<DataPath>НаборКонстант.ИспользоватьКоммерческиеПредложенияКлиентам</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="ИспользоватьКоммерческиеПредложенияКлиентамКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="ИспользоватьКоммерческиеПредложенияКлиентамРасширеннаяПодсказка" id="100"/>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьКоммерческиеПредложенияПоставщиков" id="101">
+							<DataPath>НаборКонстант.ИспользоватьКоммерческиеПредложенияПоставщиков</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="ИспользоватьКоммерческиеПредложенияПоставщиковКонтекстноеМеню" id="102"/>
+							<ExtendedTooltip name="ИспользоватьКоммерческиеПредложенияПоставщиковРасширеннаяПодсказка" id="103"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Демонстрационные" id="74">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демонстрационные параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демонстрационные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="ДемонстрационныеРасширеннаяПодсказка" id="75"/>
+			<ChildItems>
+				<InputField name="ВалютаРегламентированногоУчета" id="17">
+					<DataPath>НаборКонстант.ВалютаРегламентированногоУчета</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ВалютаРегламентированногоУчетаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ВалютаРегламентированногоУчетаРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<CheckBoxField name="_ДемоИспользоватьПартнеровИКонтрагентов" id="45">
+					<DataPath>НаборКонстант._ДемоИспользоватьПартнеровИКонтрагентов</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="_ДемоИспользоватьПартнеровИКонтрагентовКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="_ДемоИспользоватьПартнеровИКонтрагентовРасширеннаяПодсказка" id="47"/>
+				</CheckBoxField>
+				<Button name="ПроверитьИнтеграцию1СОтчетность" id="76">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПроверитьИнтеграцию1СОтчетность</CommandName>
+					<ExtendedTooltip name="ПроверитьИнтеграцию1СОтчетностьРасширеннаяПодсказка" id="77"/>
+				</Button>
+				<Button name="УдалитьЭлектронныеДокументы" id="48">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.УдалитьЭлектронныеДокументы</CommandName>
+					<ExtendedTooltip name="УдалитьЭлектронныеДокументыРасширеннаяПодсказка" id="49"/>
+				</Button>
+				<Button name="ОтключитьИнтернетПоддержку" id="82">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОтключитьИнтернетПоддержку</CommandName>
+					<ExtendedTooltip name="ОтключитьИнтернетПоддержкуРасширеннаяПодсказка" id="83"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ХраненияФайлов" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранение файлов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранения файлов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="ХраненияФайловРасширеннаяПодсказка" id="37"/>
+			<ChildItems>
+				<CheckBoxField name="ХранитьФайлыВТомахНаДиске" id="13">
+					<DataPath>НаборКонстант.ХранитьФайлыВТомахНаДиске</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="ХранитьФайлыВТомахНаДискеКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ХранитьФайлыВТомахНаДискеРасширеннаяПодсказка" id="38"/>
+				</CheckBoxField>
+				<Button name="СправочникТомаХраненияФайловОткрытьСписок" id="15">
+					<Type>Hyperlink</Type>
+					<CommandName>Catalog.ТомаХраненияФайлов.StandardCommand.OpenList</CommandName>
+					<ExtendedTooltip name="СправочникТомаХраненияФайловОткрытьСписокРасширеннаяПодсказка" id="39"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>НаборКонстант.ИспользоватьОтложеннуюОтправкуЭлектронныхДокументов</Field>
+				<Field>НаборКонстант.СписокЗапрещенныхРасширений</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="Прогресс" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогресс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УдалитьЭлектронныеДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить электронные документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить все данные по электронным документам в информационной базе, при этом настройки обмена не будут затронуты.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьЭлектронныеДокументы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьИнтеграцию1СОтчетность" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить интеграцию с 1С-Отчетность</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить интеграцию с сервисом 1С-Отчетность</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьИнтеграцию1СОтчетность</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтключитьИнтернетПоддержку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить Интернет-поддержку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить Интернет поддержку в информационной базе. Будут очищены текущие логин и пароль подключения.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтключитьИнтернетПоддержку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

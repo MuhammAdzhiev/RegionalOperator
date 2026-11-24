@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Маркируемые упаковки</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+	</CommandSet>
+	<ShowCommandBar>true</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="ФормаОК" id="47">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОК</CommandName>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаОКРасширеннаяПодсказка" id="48"/>
+			</Button>
+			<Button name="ФормаОтмена" id="49">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Отмена</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="50"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаВидыУчетныхДокументов" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа виды учетных документов</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаВидыУчетныхДокументовРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<Page name="Прочие" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ПрочиеРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<Table name="КодыУпаковокМаркируемойПродукции" id="15">
+							<Representation>List</Representation>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<Header>false</Header>
+							<HorizontalLinesBWA>false</HorizontalLinesBWA>
+							<VerticalLinesBWA>false</VerticalLinesBWA>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>КодыУпаковокМаркируемойПродукции</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КодыУпаковокМаркируемойПродукцииКонтекстноеМеню" id="16"/>
+							<AutoCommandBar name="КодыУпаковокМаркируемойПродукцииКоманднаяПанель" id="17"/>
+							<ExtendedTooltip name="КодыУпаковокМаркируемойПродукцииРасширеннаяПодсказка" id="18"/>
+							<SearchStringAddition name="КодыУпаковокМаркируемойПродукцииСтрокаПоиска" id="19">
+								<AdditionSource>
+									<Item>КодыУпаковокМаркируемойПродукции</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КодыУпаковокМаркируемойПродукцииСтрокаПоискаКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="КодыУпаковокМаркируемойПродукцииСтрокаПоискаРасширеннаяПодсказка" id="21"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КодыУпаковокМаркируемойПродукцииСостояниеПросмотра" id="22">
+								<AdditionSource>
+									<Item>КодыУпаковокМаркируемойПродукции</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<HorizontalLocation>Left</HorizontalLocation>
+								<ContextMenu name="КодыУпаковокМаркируемойПродукцииСостояниеПросмотраКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="КодыУпаковокМаркируемойПродукцииСостояниеПросмотраРасширеннаяПодсказка" id="24"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КодыУпаковокМаркируемойПродукцииУправлениеПоиском" id="25">
+								<AdditionSource>
+									<Item>КодыУпаковокМаркируемойПродукции</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КодыУпаковокМаркируемойПродукцииУправлениеПоискомКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="КодыУпаковокМаркируемойПродукцииУправлениеПоискомРасширеннаяПодсказка" id="27"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="КодыИндивидуальныхУпаковокМаркируемойПродукцииНомерУпаковки" id="51">
+									<DataPath>КодыУпаковокМаркируемойПродукции.НомерУпаковки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<MarkRequiredComplete>true</MarkRequiredComplete>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="КодыИндивидуальныхУпаковокМаркируемойПродукцииНомерУпаковкиКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="КодыИндивидуальныхУпаковокМаркируемойПродукцииНомерУпаковкиРасширеннаяПодсказка" id="53"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="АктОРасхождениях" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акт о расхождениях</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="АктОРасхожденияхРасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<Pages name="ГруппаТаблицыМаркировкиАктаОРасхождениях" id="62">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа таблицы маркировки акта о расхождениях</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="ГруппаТаблицыМаркировкиАктаОРасхожденияхРасширеннаяПодсказка" id="63"/>
+							<ChildItems>
+								<Page name="ПоДокументу" id="64">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По документу</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<TitleDataPath>КодыМаркировкиПоДокументу.RowsCount</TitleDataPath>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="ПоДокументуРасширеннаяПодсказка" id="65"/>
+									<ChildItems>
+										<Table name="КодыМаркировкиПоДокументу" id="66">
+											<Representation>List</Representation>
+											<RowSelectionMode>Cell</RowSelectionMode>
+											<Header>false</Header>
+											<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+											<DataPath>КодыМаркировкиПоДокументу</DataPath>
+											<CommandSet>
+												<ExcludedCommand>CheckAll</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>Pickup</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>UncheckAll</ExcludedCommand>
+											</CommandSet>
+											<ContextMenu name="КодыМаркировкиПоДокументуКонтекстноеМеню" id="68"/>
+											<AutoCommandBar name="КодыМаркировкиПоДокументуКоманднаяПанель" id="67"/>
+											<ExtendedTooltip name="КодыМаркировкиПоДокументуРасширеннаяПодсказка" id="69"/>
+											<SearchStringAddition name="КодыМаркировкиПоДокументуСтрокаПоиска" id="70">
+												<AdditionSource>
+													<Item>КодыМаркировкиПоДокументу</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиПоДокументуСтрокаПоискаКонтекстноеМеню" id="71"/>
+												<ExtendedTooltip name="КодыМаркировкиПоДокументуСтрокаПоискаРасширеннаяПодсказка" id="72"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="КодыМаркировкиПоДокументуСостояниеПросмотра" id="76">
+												<AdditionSource>
+													<Item>КодыМаркировкиПоДокументу</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиПоДокументуСостояниеПросмотраКонтекстноеМеню" id="77"/>
+												<ExtendedTooltip name="КодыМаркировкиПоДокументуСостояниеПросмотраРасширеннаяПодсказка" id="78"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="КодыМаркировкиПоДокументуУправлениеПоиском" id="73">
+												<AdditionSource>
+													<Item>КодыМаркировкиПоДокументу</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиПоДокументуУправлениеПоискомКонтекстноеМеню" id="74"/>
+												<ExtendedTooltip name="КодыМаркировкиПоДокументуУправлениеПоискомРасширеннаяПодсказка" id="75"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="КодыМаркировкиПоДокументуЗначение" id="79">
+													<DataPath>КодыМаркировкиПоДокументу.Value</DataPath>
+													<ContextMenu name="КодыМаркировкиПоДокументуЗначениеКонтекстноеМеню" id="80"/>
+													<ExtendedTooltip name="КодыМаркировкиПоДокументуЗначениеРасширеннаяПодсказка" id="81"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ПоФакту" id="82">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По факту</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<TitleDataPath>КодыМаркировкиПоФакту.RowsCount</TitleDataPath>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="ПоФактуРасширеннаяПодсказка" id="83"/>
+									<ChildItems>
+										<Table name="КодыМаркировкиПоФакту" id="84">
+											<Representation>List</Representation>
+											<RowSelectionMode>Cell</RowSelectionMode>
+											<Header>false</Header>
+											<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+											<DataPath>КодыМаркировкиПоФакту</DataPath>
+											<CommandSet>
+												<ExcludedCommand>CheckAll</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>Pickup</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>UncheckAll</ExcludedCommand>
+											</CommandSet>
+											<ContextMenu name="КодыМаркировкиПоФактуКонтекстноеМеню" id="86"/>
+											<AutoCommandBar name="КодыМаркировкиПоФактуКоманднаяПанель" id="85"/>
+											<ExtendedTooltip name="КодыМаркировкиПоФактуРасширеннаяПодсказка" id="87"/>
+											<SearchStringAddition name="КодыМаркировкиПоФактуСтрокаПоиска" id="88">
+												<AdditionSource>
+													<Item>КодыМаркировкиПоФакту</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиПоФактуСтрокаПоискаКонтекстноеМеню" id="89"/>
+												<ExtendedTooltip name="КодыМаркировкиПоФактуСтрокаПоискаРасширеннаяПодсказка" id="90"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="КодыМаркировкиПоФактуСостояниеПросмотра" id="94">
+												<AdditionSource>
+													<Item>КодыМаркировкиПоФакту</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиПоФактуСостояниеПросмотраКонтекстноеМеню" id="95"/>
+												<ExtendedTooltip name="КодыМаркировкиПоФактуСостояниеПросмотраРасширеннаяПодсказка" id="96"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="КодыМаркировкиПоФактуУправлениеПоиском" id="91">
+												<AdditionSource>
+													<Item>КодыМаркировкиПоФакту</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиПоФактуУправлениеПоискомКонтекстноеМеню" id="92"/>
+												<ExtendedTooltip name="КодыМаркировкиПоФактуУправлениеПоискомРасширеннаяПодсказка" id="93"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="КодыМаркировкиПоФактуЗначение" id="97">
+													<DataPath>КодыМаркировкиПоФакту.Value</DataPath>
+													<ContextMenu name="КодыМаркировкиПоФактуЗначениеКонтекстноеМеню" id="98"/>
+													<ExtendedTooltip name="КодыМаркировкиПоФактуЗначениеРасширеннаяПодсказка" id="99"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Недостача" id="100">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Недостача</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<TitleDataPath>КодыМаркировкиНедостачи.RowsCount</TitleDataPath>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="НедостачаРасширеннаяПодсказка" id="101"/>
+									<ChildItems>
+										<Table name="КодыМаркировкиНедостачи" id="102">
+											<Representation>List</Representation>
+											<RowSelectionMode>Cell</RowSelectionMode>
+											<Header>false</Header>
+											<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+											<DataPath>КодыМаркировкиНедостачи</DataPath>
+											<CommandSet>
+												<ExcludedCommand>CheckAll</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>Pickup</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>UncheckAll</ExcludedCommand>
+											</CommandSet>
+											<ContextMenu name="КодыМаркировкиНедостачиКонтекстноеМеню" id="104"/>
+											<AutoCommandBar name="КодыМаркировкиНедостачиКоманднаяПанель" id="103"/>
+											<ExtendedTooltip name="КодыМаркировкиНедостачиРасширеннаяПодсказка" id="105"/>
+											<SearchStringAddition name="КодыМаркировкиНедостачиСтрокаПоиска" id="106">
+												<AdditionSource>
+													<Item>КодыМаркировкиНедостачи</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиНедостачиСтрокаПоискаКонтекстноеМеню" id="107"/>
+												<ExtendedTooltip name="КодыМаркировкиНедостачиСтрокаПоискаРасширеннаяПодсказка" id="108"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="КодыМаркировкиНедостачиСостояниеПросмотра" id="112">
+												<AdditionSource>
+													<Item>КодыМаркировкиНедостачи</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиНедостачиСостояниеПросмотраКонтекстноеМеню" id="113"/>
+												<ExtendedTooltip name="КодыМаркировкиНедостачиСостояниеПросмотраРасширеннаяПодсказка" id="114"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="КодыМаркировкиНедостачиУправлениеПоиском" id="109">
+												<AdditionSource>
+													<Item>КодыМаркировкиНедостачи</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиНедостачиУправлениеПоискомКонтекстноеМеню" id="110"/>
+												<ExtendedTooltip name="КодыМаркировкиНедостачиУправлениеПоискомРасширеннаяПодсказка" id="111"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="КодыМаркировкиНедостачиЗначение" id="115">
+													<DataPath>КодыМаркировкиНедостачи.Value</DataPath>
+													<ContextMenu name="КодыМаркировкиНедостачиЗначениеКонтекстноеМеню" id="116"/>
+													<ExtendedTooltip name="КодыМаркировкиНедостачиЗначениеРасширеннаяПодсказка" id="117"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Излишки" id="118">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Излишки</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<TitleDataPath>КодыМаркировкиИзлишки.RowsCount</TitleDataPath>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="ИзлишкиРасширеннаяПодсказка" id="119"/>
+									<ChildItems>
+										<Table name="КодыМаркировкиИзлишки" id="120">
+											<Representation>List</Representation>
+											<RowSelectionMode>Cell</RowSelectionMode>
+											<Header>false</Header>
+											<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+											<DataPath>КодыМаркировкиИзлишки</DataPath>
+											<CommandSet>
+												<ExcludedCommand>CheckAll</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>Pickup</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>UncheckAll</ExcludedCommand>
+											</CommandSet>
+											<ContextMenu name="КодыМаркировкиИзлишкиКонтекстноеМеню" id="122"/>
+											<AutoCommandBar name="КодыМаркировкиИзлишкиКоманднаяПанель" id="121"/>
+											<ExtendedTooltip name="КодыМаркировкиИзлишкиРасширеннаяПодсказка" id="123"/>
+											<SearchStringAddition name="КодыМаркировкиИзлишкиСтрокаПоиска" id="124">
+												<AdditionSource>
+													<Item>КодыМаркировкиИзлишки</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиИзлишкиСтрокаПоискаКонтекстноеМеню" id="125"/>
+												<ExtendedTooltip name="КодыМаркировкиИзлишкиСтрокаПоискаРасширеннаяПодсказка" id="126"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="КодыМаркировкиИзлишкиСостояниеПросмотра" id="130">
+												<AdditionSource>
+													<Item>КодыМаркировкиИзлишки</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиИзлишкиСостояниеПросмотраКонтекстноеМеню" id="131"/>
+												<ExtendedTooltip name="КодыМаркировкиИзлишкиСостояниеПросмотраРасширеннаяПодсказка" id="132"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="КодыМаркировкиИзлишкиУправлениеПоиском" id="127">
+												<AdditionSource>
+													<Item>КодыМаркировкиИзлишки</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиИзлишкиУправлениеПоискомКонтекстноеМеню" id="128"/>
+												<ExtendedTooltip name="КодыМаркировкиИзлишкиУправлениеПоискомРасширеннаяПодсказка" id="129"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="КодыМаркировкиИзлишкиЗначение" id="133">
+													<DataPath>КодыМаркировкиИзлишки.Value</DataPath>
+													<ContextMenu name="КодыМаркировкиИзлишкиЗначениеКонтекстноеМеню" id="134"/>
+													<ExtendedTooltip name="КодыМаркировкиИзлишкиЗначениеРасширеннаяПодсказка" id="135"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Брак" id="136">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Брак</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<TitleDataPath>КодыМаркировкиБрак.RowsCount</TitleDataPath>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="БракРасширеннаяПодсказка" id="137"/>
+									<ChildItems>
+										<Table name="КодыМаркировкиБрак" id="138">
+											<Representation>List</Representation>
+											<RowSelectionMode>Cell</RowSelectionMode>
+											<Header>false</Header>
+											<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+											<DataPath>КодыМаркировкиБрак</DataPath>
+											<CommandSet>
+												<ExcludedCommand>CheckAll</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>Pickup</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>UncheckAll</ExcludedCommand>
+											</CommandSet>
+											<ContextMenu name="КодыМаркировкиБракКонтекстноеМеню" id="140"/>
+											<AutoCommandBar name="КодыМаркировкиБракКоманднаяПанель" id="139"/>
+											<ExtendedTooltip name="КодыМаркировкиБракРасширеннаяПодсказка" id="141"/>
+											<SearchStringAddition name="КодыМаркировкиБракСтрокаПоиска" id="142">
+												<AdditionSource>
+													<Item>КодыМаркировкиБрак</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиБракСтрокаПоискаКонтекстноеМеню" id="143"/>
+												<ExtendedTooltip name="КодыМаркировкиБракСтрокаПоискаРасширеннаяПодсказка" id="144"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="КодыМаркировкиБракСостояниеПросмотра" id="148">
+												<AdditionSource>
+													<Item>КодыМаркировкиБрак</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиБракСостояниеПросмотраКонтекстноеМеню" id="149"/>
+												<ExtendedTooltip name="КодыМаркировкиБракСостояниеПросмотраРасширеннаяПодсказка" id="150"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="КодыМаркировкиБракУправлениеПоиском" id="145">
+												<AdditionSource>
+													<Item>КодыМаркировкиБрак</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиБракУправлениеПоискомКонтекстноеМеню" id="146"/>
+												<ExtendedTooltip name="КодыМаркировкиБракУправлениеПоискомРасширеннаяПодсказка" id="147"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="КодыМаркировкиБракЗначение" id="151">
+													<DataPath>КодыМаркировкиБрак.Value</DataPath>
+													<ContextMenu name="КодыМаркировкиБракЗначениеКонтекстноеМеню" id="152"/>
+													<ExtendedTooltip name="КодыМаркировкиБракЗначениеРасширеннаяПодсказка" id="153"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Бой" id="154">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Бой</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<TitleDataPath>КодыМаркировкиБой.RowsCount</TitleDataPath>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="БойРасширеннаяПодсказка" id="155"/>
+									<ChildItems>
+										<Table name="КодыМаркировкиБой" id="156">
+											<Representation>List</Representation>
+											<RowSelectionMode>Cell</RowSelectionMode>
+											<Header>false</Header>
+											<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+											<DataPath>КодыМаркировкиБой</DataPath>
+											<CommandSet>
+												<ExcludedCommand>CheckAll</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>Pickup</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>UncheckAll</ExcludedCommand>
+											</CommandSet>
+											<ContextMenu name="КодыМаркировкиБойКонтекстноеМеню" id="158"/>
+											<AutoCommandBar name="КодыМаркировкиБойКоманднаяПанель" id="157"/>
+											<ExtendedTooltip name="КодыМаркировкиБойРасширеннаяПодсказка" id="159"/>
+											<SearchStringAddition name="КодыМаркировкиБойСтрокаПоиска" id="160">
+												<AdditionSource>
+													<Item>КодыМаркировкиБой</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиБойСтрокаПоискаКонтекстноеМеню" id="161"/>
+												<ExtendedTooltip name="КодыМаркировкиБойСтрокаПоискаРасширеннаяПодсказка" id="162"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="КодыМаркировкиБойСостояниеПросмотра" id="166">
+												<AdditionSource>
+													<Item>КодыМаркировкиБой</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиБойСостояниеПросмотраКонтекстноеМеню" id="167"/>
+												<ExtendedTooltip name="КодыМаркировкиБойСостояниеПросмотраРасширеннаяПодсказка" id="168"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="КодыМаркировкиБойУправлениеПоиском" id="163">
+												<AdditionSource>
+													<Item>КодыМаркировкиБой</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="КодыМаркировкиБойУправлениеПоискомКонтекстноеМеню" id="164"/>
+												<ExtendedTooltip name="КодыМаркировкиБойУправлениеПоискомРасширеннаяПодсказка" id="165"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="КодыМаркировкиБойЗначение" id="169">
+													<DataPath>КодыМаркировкиБой.Value</DataPath>
+													<ContextMenu name="КодыМаркировкиБойЗначениеКонтекстноеМеню" id="170"/>
+													<ExtendedTooltip name="КодыМаркировкиБойЗначениеРасширеннаяПодсказка" id="171"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаПодвал" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</Title>
+			<Group>HorizontalIfPossible</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<LabelField name="Номенклатура" id="9">
+					<DataPath>Номенклатура</DataPath>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<ContextMenu name="НоменклатураКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="11"/>
+				</LabelField>
+				<LabelField name="Количество" id="12">
+					<DataPath>Количество</DataPath>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<ContextMenu name="КоличествоКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="14"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Номенклатура" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Количество" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодыУпаковокМаркируемойПродукции" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды упаковок маркируемой продукции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="НомерУпаковки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер упаковки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КодыМаркировкиПоДокументу" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды маркировки по документу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="КодыМаркировкиПоФакту" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды маркировки по факту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="КодыМаркировкиНедостачи" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды маркировки недостачи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="КодыМаркировкиИзлишки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды маркировки излишки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="КодыМаркировкиБрак" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды маркировки брак</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="КодыМаркировкиБой" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды маркировки бой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЭтоАктОРасхождениях" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это акт о расхождениях</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОК</Action>
+		</Command>
+		<Command name="Отмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Отмена</Action>
+		</Command>
+	</Commands>
+</Form>
